@@ -239,7 +239,6 @@ _gen-yaml:
 # Publish the values lists (SKOS and CSV), the field table and the JSON Schema beside the schema
 _add-artifacts:
   rm -rf {{distrib_schema_path}}/lists && cp -R {{src}}/{{schema_name}}/lists {{distrib_schema_path}}/lists
-  cp {{src}}/{{schema_name}}/fields/specifications.csv {{distrib_schema_path}}/
   uv run gen-json-schema {{source_schema_path}} > {{distrib_schema_path}}/{{schema_name}}.schema.json
 
 # Run documentation server

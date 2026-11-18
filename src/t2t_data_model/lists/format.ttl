@@ -105,7 +105,7 @@
 <https://texroad-foundation.github.io/t2t-data-model/lists/format> a skos:ConceptScheme ;
     dct:isPartOf t2t: ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:publisher <https://texroad.org> ;
+    dct:publisher <https://www.texroad.org> ;
     dct:title "Format"@en ;
     owl:versionInfo "0.1.0" ;
     skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/format/clippings>,

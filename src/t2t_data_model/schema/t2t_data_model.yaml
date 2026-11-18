@@ -5,7 +5,7 @@ description: The Specifications fields (CDM-ID 400–660) of the Common Data Mod
   values lists.
 version: 0.1.0
 license: https://creativecommons.org/licenses/by/4.0/
-created_by: https://texroad.org
+created_by: https://www.texroad.org
 see_also:
 - https://github.com/texroad-foundation/t2t-data-model
 in_language: en

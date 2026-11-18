@@ -4,7 +4,7 @@ The Specifications fields (CDM-ID 400–660) of the **Common Data Model for Text
 values lists, in machine-readable form. The model is described in *Common Data Model for Textile to Textile
 Recycling*, a follow-up document to PESCO-UP D2.1 and a deliverable from ECOSYSTEX Target Group 5.
 
-Published by the [TEXroad Foundation](https://texroad.org). Documentation:
+Published by the [TEXroad Foundation](https://www.texroad.org). Documentation:
 <https://texroad-foundation.github.io/t2t-data-model>
 
 ## What is published

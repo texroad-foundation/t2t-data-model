@@ -90,7 +90,7 @@
 <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> a skos:ConceptScheme ;
     dct:isPartOf t2t: ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:publisher <https://texroad.org> ;
+    dct:publisher <https://www.texroad.org> ;
     dct:title "Contaminant Type > Soft trims and prints"@en ;
     owl:versionInfo "0.1.0" ;
     skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/binding>,

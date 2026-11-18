@@ -1,0 +1,4 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_threshold/minimum,minimum,Minimum,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_threshold/maximum,maximum,Maximum,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_threshold/amount_listed,amount_listed,Amount listed,,,

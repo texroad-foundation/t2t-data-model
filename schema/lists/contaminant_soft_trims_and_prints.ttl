@@ -1,0 +1,108 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/binding> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "binding" ;
+    skos:prefLabel "Binding"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/direct_screen_print> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "direct_screen_print" ;
+    skos:prefLabel "Direct screen print"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/drawcord> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "drawcord" ;
+    skos:prefLabel "Drawcord"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/flag_label> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "flag_label" ;
+    skos:prefLabel "(Flag)label"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/heat_transfer> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "heat_transfer" ;
+    skos:prefLabel "Heat transfer"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/hook_and_loop_closure> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "hook_and_loop_closure" ;
+    skos:prefLabel "Hook & loop closure"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/interlining> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "interlining" ;
+    skos:prefLabel "Interlining"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/other> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "other" ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/pigment_print> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "pigment_print" ;
+    skos:prefLabel "Pigment print"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/piping> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "piping" ;
+    skos:prefLabel "Piping"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/sewing_thread> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "sewing_thread" ;
+    skos:prefLabel "Sewing thread"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/tape> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> ;
+    skos:notation "tape" ;
+    skos:prefLabel "Tape"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Contaminant Type > Soft trims and prints"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/binding>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/direct_screen_print>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/drawcord>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/flag_label>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/heat_transfer>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/hook_and_loop_closure>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/interlining>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/pigment_print>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/piping>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/sewing_thread>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/tape> .
+

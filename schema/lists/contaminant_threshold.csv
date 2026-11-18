@@ -1,0 +1,5 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/measured_value,measured_value,Measured value,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/maximum,maximum,Maximum,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/trace_amounts_accepted,trace_amounts_accepted,Trace amounts accepted,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/zero_tolerance,zero_tolerance,Zero tolerance,,,

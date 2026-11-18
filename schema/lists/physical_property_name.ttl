@@ -1,0 +1,96 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/brightness> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "brightness" ;
+    skos:prefLabel "Brightness"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/crystallinity> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "crystallinity" ;
+    skos:prefLabel "Crystallinity"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/degree_of_polymerization_dp> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "degree_of_polymerization_dp" ;
+    skos:prefLabel "Degree of Polymerization (DP)"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/density> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "density" ;
+    skos:prefLabel "Density"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/fiber_length> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "fiber_length" ;
+    skos:prefLabel "Fiber Length"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/intrinsic_viscosity_iv> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "intrinsic_viscosity_iv" ;
+    skos:prefLabel "Intrinsic Viscosity (IV)"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/moisture_dry_matter_content> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "moisture_dry_matter_content" ;
+    skos:prefLabel "Moisture/Dry Matter Content"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/molecular_weight_mw_mn> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "molecular_weight_mw_mn" ;
+    skos:prefLabel "Molecular Weight (Mw/Mn)"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/other> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "other" ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/piece_size> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "piece_size" ;
+    skos:prefLabel "Piece size"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/rheology> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "rheology" ;
+    skos:prefLabel "Rheology"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/thermal_properties_tm_tg> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> ;
+    skos:notation "thermal_properties_tm_tg" ;
+    skos:prefLabel "Thermal Properties (Tm, Tg)"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Physical Property Name"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/brightness>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/crystallinity>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/degree_of_polymerization_dp>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/density>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/fiber_length>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/intrinsic_viscosity_iv>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/moisture_dry_matter_content>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/molecular_weight_mw_mn>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/piece_size>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/rheology>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/thermal_properties_tm_tg> .
+

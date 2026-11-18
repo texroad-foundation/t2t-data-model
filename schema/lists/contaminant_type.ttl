@@ -1,0 +1,54 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> ;
+    skos:notation "coatings_and_finishes" ;
+    skos:prefLabel "Coatings and finishes"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/dyes_and_pigments> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> ;
+    skos:notation "dyes_and_pigments" ;
+    skos:prefLabel "Dyes and pigments"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/fibers> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> ;
+    skos:notation "fibers" ;
+    skos:prefLabel "Fibers"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> ;
+    skos:notation "hard_trims" ;
+    skos:prefLabel "Hard trims"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> ;
+    skos:notation "other_materials" ;
+    skos:prefLabel "Other materials"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> ;
+    skos:notation "soft_trims_and_prints" ;
+    skos:prefLabel "Soft trims and prints"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Contaminant Type"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/dyes_and_pigments>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/fibers>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints> .
+

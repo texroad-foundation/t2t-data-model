@@ -1,0 +1,13 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/brightness,brightness,Brightness,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/crystallinity,crystallinity,Crystallinity,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/degree_of_polymerization_dp,degree_of_polymerization_dp,Degree of Polymerization (DP),,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/density,density,Density,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/fiber_length,fiber_length,Fiber Length,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/intrinsic_viscosity_iv,intrinsic_viscosity_iv,Intrinsic Viscosity (IV),,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/moisture_dry_matter_content,moisture_dry_matter_content,Moisture/Dry Matter Content,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/molecular_weight_mw_mn,molecular_weight_mw_mn,Molecular Weight (Mw/Mn),,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/piece_size,piece_size,Piece size,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/rheology,rheology,Rheology,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/thermal_properties_tm_tg,thermal_properties_tm_tg,"Thermal Properties (Tm, Tg)",,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/other,other,Other,,,

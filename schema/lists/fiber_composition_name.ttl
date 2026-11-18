@@ -1,0 +1,173 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/acrylic> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "acrylic" ;
+    skos:prefLabel "Acrylic"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/aramid> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "aramid" ;
+    skos:prefLabel "Aramid"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/bamboo> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "bamboo" ;
+    skos:prefLabel "Bamboo"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/carbon> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "carbon" ;
+    skos:prefLabel "Carbon"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/cashmere> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "cashmere" ;
+    skos:prefLabel "Cashmere"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/cotton> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "cotton" ;
+    skos:prefLabel "Cotton"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/elastane> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "elastane" ;
+    skos:prefLabel "Elastane"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/hemp> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "hemp" ;
+    skos:prefLabel "Hemp"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/jute> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "jute" ;
+    skos:prefLabel "Jute"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/linen> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "linen" ;
+    skos:prefLabel "Linen"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/lyocell> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "lyocell" ;
+    skos:prefLabel "Lyocell"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/modal> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "modal" ;
+    skos:prefLabel "Modal"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "other" ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other_animal_fibers> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "other_animal_fibers" ;
+    skos:prefLabel "Other animal fibers"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other_cellulosic_fibers> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "other_cellulosic_fibers" ;
+    skos:prefLabel "Other cellulosic fibers"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/plant_fiber_other> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "plant_fiber_other" ;
+    skos:prefLabel "Plant fiber (other)"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "polyamide" ;
+    skos:prefLabel "Polyamide"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide_6> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "polyamide_6" ;
+    skos:prefLabel "Polyamide 6"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide_66> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "polyamide_66" ;
+    skos:prefLabel "Polyamide 66"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyester> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "polyester" ;
+    skos:prefLabel "Polyester"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/silk> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "silk" ;
+    skos:prefLabel "Silk"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/viscose> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "viscose" ;
+    skos:prefLabel "Viscose"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/wool> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> ;
+    skos:notation "wool" ;
+    skos:prefLabel "Wool"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Fiber Composition Name"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/acrylic>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/aramid>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/bamboo>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/carbon>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/cashmere>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/cotton>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/elastane>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/hemp>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/jute>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/linen>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/lyocell>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/modal>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other_animal_fibers>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other_cellulosic_fibers>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/plant_fiber_other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide_6>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide_66>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyester>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/silk>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/viscose>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/wool> .
+

@@ -1,0 +1,995 @@
+{
+    "$defs": {
+        "ColorGeneric": {
+            "description": "",
+            "enum": [
+                "multicoloured",
+                "mostly_dark_colors",
+                "mostly_light_colors",
+                "undyed",
+                "white",
+                "indigo",
+                "red",
+                "pink",
+                "orange",
+                "yellow",
+                "green",
+                "blue",
+                "brown",
+                "grey",
+                "purple",
+                "navy",
+                "other",
+                "black"
+            ],
+            "title": "ColorGeneric",
+            "type": "string"
+        },
+        "Contaminant": {
+            "additionalProperties": false,
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "contaminant_type": {
+                                "const": "fibers"
+                            }
+                        },
+                        "required": [
+                            "contaminant_type"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "contaminant_name": {
+                                "enum": [
+                                    "acrylic",
+                                    "aramid",
+                                    "bamboo",
+                                    "carbon",
+                                    "cashmere",
+                                    "cotton",
+                                    "elastane",
+                                    "hemp",
+                                    "jute",
+                                    "linen",
+                                    "lyocell",
+                                    "modal",
+                                    "plant_fiber_other",
+                                    "polyamide",
+                                    "polyamide_6",
+                                    "polyamide_66",
+                                    "polyester",
+                                    "silk",
+                                    "viscose",
+                                    "wool",
+                                    "other_animal_fibers",
+                                    "other_cellulosic_fibers",
+                                    "other"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "contaminant_type": {
+                                "const": "coatings_and_finishes"
+                            }
+                        },
+                        "required": [
+                            "contaminant_type"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "contaminant_name": {
+                                "enum": [
+                                    "uv_resistant",
+                                    "flame_retardant",
+                                    "fire_resistant",
+                                    "antimicrobial",
+                                    "insect_repellent",
+                                    "non_slip_dimensional_stability",
+                                    "antistatic",
+                                    "water_repellent",
+                                    "dirt_repellent",
+                                    "silicone",
+                                    "elastomeric",
+                                    "fabric_softening",
+                                    "fabric_stiffness",
+                                    "wrinkle_resistant",
+                                    "fabric_hand",
+                                    "anti_pilling",
+                                    "other"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "contaminant_type": {
+                                "const": "dyes_and_pigments"
+                            }
+                        },
+                        "required": [
+                            "contaminant_type"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "contaminant_name": {
+                                "enum": [
+                                    "natural_dyes",
+                                    "acid",
+                                    "basic",
+                                    "other"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "contaminant_type": {
+                                "const": "soft_trims_and_prints"
+                            }
+                        },
+                        "required": [
+                            "contaminant_type"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "contaminant_name": {
+                                "enum": [
+                                    "tape",
+                                    "binding",
+                                    "piping",
+                                    "flag_label",
+                                    "interlining",
+                                    "sewing_thread",
+                                    "drawcord",
+                                    "hook_and_loop_closure",
+                                    "heat_transfer",
+                                    "direct_screen_print",
+                                    "pigment_print",
+                                    "other"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "contaminant_type": {
+                                "const": "hard_trims"
+                            }
+                        },
+                        "required": [
+                            "contaminant_type"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "contaminant_name": {
+                                "enum": [
+                                    "button",
+                                    "snap_button",
+                                    "cord_stopper",
+                                    "aglet",
+                                    "metal_zip",
+                                    "plastic_zip",
+                                    "puller",
+                                    "hook_and_eye_closure",
+                                    "buckle",
+                                    "rivet",
+                                    "studs",
+                                    "sequins",
+                                    "other"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "contaminant_type": {
+                                "const": "other_materials"
+                            }
+                        },
+                        "required": [
+                            "contaminant_type"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "contaminant_name": {
+                                "enum": [
+                                    "acrylic_polymer",
+                                    "silicone",
+                                    "polyacrylate",
+                                    "polyvinyl_chloride",
+                                    "polytetrafluoroethylene",
+                                    "polyoxymethylene",
+                                    "acrylonitrile_butadiene_styrene",
+                                    "aluminium",
+                                    "brass",
+                                    "zinc",
+                                    "stainless_steel",
+                                    "copper",
+                                    "ferrous_metal",
+                                    "non_ferrous_metal",
+                                    "polylactide",
+                                    "polyethylene_furanoate",
+                                    "aramid",
+                                    "carbon",
+                                    "glass",
+                                    "pfas",
+                                    "other"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "contaminant_hazardous_substance": {
+                                "const": "yes"
+                            }
+                        },
+                        "required": [
+                            "contaminant_hazardous_substance"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "contaminant_explanation": {},
+                            "contaminant_sds": {}
+                        },
+                        "required": [
+                            "contaminant_sds",
+                            "contaminant_explanation"
+                        ]
+                    }
+                }
+            ],
+            "description": "One Contaminant entry, repeated as a group (the fields with a 1 in their name).",
+            "properties": {
+                "contaminant_amount": {
+                    "description": "Numeric quantification of the Contaminant",
+                    "minimum": 0,
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "contaminant_amount_unit": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ContaminantAmountUnit"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Unit of measure for numeric quantification of impurity amount or threshold amount (if numerically quantified)"
+                },
+                "contaminant_check": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ContaminantCheck"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Describes if the batch was checked on the presence of a certain contaminant."
+                },
+                "contaminant_evidence": {
+                    "description": "Upload evidence to support claims related to explanation of hazardous substances.",
+                    "format": "uri",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contaminant_explanation": {
+                    "description": "Brief explanation of use of or contact with hazardous chemical on REACH restriction or candidate list. Required when Contaminant Hazard is marked \"yes\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contaminant_hazardous_substance": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/YesNo"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "For output materials batches, this flags whether the contaminant appears on REACH restriction or candidate list. If this is \"yes\", SDS and a brief explanation of their use of potential presence in the material batch is required."
+                },
+                "contaminant_name": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/FiberCompositionName"
+                        },
+                        {
+                            "$ref": "#/$defs/ContaminantCoatingsAndFinishes"
+                        },
+                        {
+                            "$ref": "#/$defs/ContaminantDyesAndPigments"
+                        },
+                        {
+                            "$ref": "#/$defs/ContaminantSoftTrimsAndPrints"
+                        },
+                        {
+                            "$ref": "#/$defs/ContaminantHardTrims"
+                        },
+                        {
+                            "$ref": "#/$defs/ContaminantOtherMaterials"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Describes the material the contaminant is made of."
+                },
+                "contaminant_sds": {
+                    "description": "Upload SDS for hazardous chemical on REACH restriction or candidate list. Required when Contaminant Hazard is marked \"yes\".",
+                    "format": "uri",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contaminant_threshold": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ContaminantThreshold"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Defines control levels of the contaminant. This is used in a similar way as the threshold for fiber composition to clarify expectations of contaminant control for suppliers or buyers."
+                },
+                "contaminant_type": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ContaminantType"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Describes the functional type of the contaminant."
+                }
+            },
+            "title": "Contaminant",
+            "type": "object"
+        },
+        "ContaminantAmountUnit": {
+            "description": "",
+            "enum": [
+                "percent_of_total_batch_weight",
+                "percent_of_total_fiber_composition",
+                "ppm"
+            ],
+            "title": "ContaminantAmountUnit",
+            "type": "string"
+        },
+        "ContaminantCheck": {
+            "description": "",
+            "enum": [
+                "not_evaluated",
+                "detected",
+                "not_detected"
+            ],
+            "title": "ContaminantCheck",
+            "type": "string"
+        },
+        "ContaminantCoatingsAndFinishes": {
+            "description": "",
+            "enum": [
+                "uv_resistant",
+                "flame_retardant",
+                "fire_resistant",
+                "antimicrobial",
+                "insect_repellent",
+                "non_slip_dimensional_stability",
+                "antistatic",
+                "water_repellent",
+                "dirt_repellent",
+                "silicone",
+                "elastomeric",
+                "fabric_softening",
+                "fabric_stiffness",
+                "wrinkle_resistant",
+                "fabric_hand",
+                "anti_pilling",
+                "other"
+            ],
+            "title": "ContaminantCoatingsAndFinishes",
+            "type": "string"
+        },
+        "ContaminantDyesAndPigments": {
+            "description": "",
+            "enum": [
+                "natural_dyes",
+                "acid",
+                "basic",
+                "other"
+            ],
+            "title": "ContaminantDyesAndPigments",
+            "type": "string"
+        },
+        "ContaminantHardTrims": {
+            "description": "",
+            "enum": [
+                "button",
+                "snap_button",
+                "cord_stopper",
+                "aglet",
+                "metal_zip",
+                "plastic_zip",
+                "puller",
+                "hook_and_eye_closure",
+                "buckle",
+                "rivet",
+                "studs",
+                "sequins",
+                "other"
+            ],
+            "title": "ContaminantHardTrims",
+            "type": "string"
+        },
+        "ContaminantOtherMaterials": {
+            "description": "",
+            "enum": [
+                "acrylic_polymer",
+                "silicone",
+                "polyacrylate",
+                "polyvinyl_chloride",
+                "polytetrafluoroethylene",
+                "polyoxymethylene",
+                "acrylonitrile_butadiene_styrene",
+                "aluminium",
+                "brass",
+                "zinc",
+                "stainless_steel",
+                "copper",
+                "ferrous_metal",
+                "non_ferrous_metal",
+                "polylactide",
+                "polyethylene_furanoate",
+                "aramid",
+                "carbon",
+                "glass",
+                "pfas",
+                "other"
+            ],
+            "title": "ContaminantOtherMaterials",
+            "type": "string"
+        },
+        "ContaminantSoftTrimsAndPrints": {
+            "description": "",
+            "enum": [
+                "tape",
+                "binding",
+                "piping",
+                "flag_label",
+                "interlining",
+                "sewing_thread",
+                "drawcord",
+                "hook_and_loop_closure",
+                "heat_transfer",
+                "direct_screen_print",
+                "pigment_print",
+                "other"
+            ],
+            "title": "ContaminantSoftTrimsAndPrints",
+            "type": "string"
+        },
+        "ContaminantThreshold": {
+            "description": "",
+            "enum": [
+                "measured_value",
+                "maximum",
+                "trace_amounts_accepted",
+                "zero_tolerance"
+            ],
+            "title": "ContaminantThreshold",
+            "type": "string"
+        },
+        "ContaminantType": {
+            "description": "",
+            "enum": [
+                "fibers",
+                "coatings_and_finishes",
+                "dyes_and_pigments",
+                "soft_trims_and_prints",
+                "hard_trims",
+                "other_materials"
+            ],
+            "title": "ContaminantType",
+            "type": "string"
+        },
+        "FabricConstruction": {
+            "description": "",
+            "enum": [
+                "knit",
+                "woven",
+                "non_woven",
+                "mixed_construction"
+            ],
+            "title": "FabricConstruction",
+            "type": "string"
+        },
+        "FiberComposition": {
+            "additionalProperties": false,
+            "description": "One Fiber Composition entry, repeated as a group (the fields with a 1 in their name).",
+            "properties": {
+                "fiber_composition_name": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/FiberCompositionName"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Name of the desired or in-scope primary textile fiber or other material content (e.g. name of the monomer) according to a standardized list. Fibers that are a contaminant should be listed in Contaminants data fields. In the case that the primary in-scope material content is no longer textile, this data field is simply composition."
+                },
+                "fiber_composition_threshold": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/FiberCompositionThreshold"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Describes how the numeric value in 520.10 should be applied - taken as a minimum, maximum, or absolute value"
+                },
+                "fiber_composition_value": {
+                    "description": "% of the total by weight for Fiber Composition 1 Name",
+                    "maximum": 100,
+                    "minimum": 0,
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                }
+            },
+            "title": "FiberComposition",
+            "type": "object"
+        },
+        "FiberCompositionName": {
+            "description": "",
+            "enum": [
+                "acrylic",
+                "aramid",
+                "bamboo",
+                "carbon",
+                "cashmere",
+                "cotton",
+                "elastane",
+                "hemp",
+                "jute",
+                "linen",
+                "lyocell",
+                "modal",
+                "plant_fiber_other",
+                "polyamide",
+                "polyamide_6",
+                "polyamide_66",
+                "polyester",
+                "silk",
+                "viscose",
+                "wool",
+                "other_animal_fibers",
+                "other_cellulosic_fibers",
+                "other"
+            ],
+            "title": "FiberCompositionName",
+            "type": "string"
+        },
+        "FiberCompositionThreshold": {
+            "description": "",
+            "enum": [
+                "minimum",
+                "maximum",
+                "amount_listed"
+            ],
+            "title": "FiberCompositionThreshold",
+            "type": "string"
+        },
+        "Format": {
+            "description": "",
+            "enum": [
+                "clippings",
+                "cutting_waste",
+                "dust_powder",
+                "fiber",
+                "flakes",
+                "garments_linens_household_textiles",
+                "granules",
+                "monomers",
+                "opened_fiber",
+                "pellets",
+                "polymers",
+                "pulp",
+                "sliver",
+                "trim",
+                "yarn",
+                "other"
+            ],
+            "title": "Format",
+            "type": "string"
+        },
+        "MaterialSource": {
+            "description": "",
+            "enum": [
+                "post_industrial",
+                "pre_consumer",
+                "post_consumer_residential",
+                "post_consumer_commercial"
+            ],
+            "title": "MaterialSource",
+            "type": "string"
+        },
+        "PhysicalProperty": {
+            "additionalProperties": false,
+            "description": "One Physical Property entry, repeated as a group (the fields with a 1 in their name).",
+            "properties": {
+                "physical_property_name": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/PhysicalPropertyName"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Describes measurable characteristics that are quantified in additional data fields.\nThis has a very, very broad application (e.g. fiber length, fabric width, viscosity, brightness)"
+                },
+                "physical_property_unit": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/PhysicalPropertyUnit"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Unit of the numerical value used for Physical Property Value."
+                },
+                "physical_property_value": {
+                    "description": "Numerical value used to measure Physical Property",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "physical_property_verification_method": {
+                    "description": "Equipment or testing method used to measure Physical Property",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "PhysicalProperty",
+            "type": "object"
+        },
+        "PhysicalPropertyName": {
+            "description": "",
+            "enum": [
+                "brightness",
+                "crystallinity",
+                "degree_of_polymerization_dp",
+                "density",
+                "fiber_length",
+                "intrinsic_viscosity_iv",
+                "moisture_dry_matter_content",
+                "molecular_weight_mw_mn",
+                "piece_size",
+                "rheology",
+                "thermal_properties_tm_tg",
+                "other"
+            ],
+            "title": "PhysicalPropertyName",
+            "type": "string"
+        },
+        "PhysicalPropertyUnit": {
+            "description": "",
+            "enum": [
+                "cm",
+                "delta_e",
+                "ml_per_g",
+                "dl_per_g",
+                "g_per_cm3",
+                "percent"
+            ],
+            "title": "PhysicalPropertyUnit",
+            "type": "string"
+        },
+        "RecycledContent": {
+            "additionalProperties": false,
+            "description": "One Recycled Content entry, repeated as a group (the fields with a 1 in their name).",
+            "properties": {
+                "recycled_content_source": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MaterialSource"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "For use on output batches. This should be determined based on the input materials used."
+                },
+                "recycled_content_value": {
+                    "description": "Quantifies the amount of recycled content by percentage of total weight. If multiple recycled content sources are used, this data should be provided separately in individual lines.",
+                    "maximum": 100,
+                    "minimum": 0,
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                }
+            },
+            "title": "RecycledContent",
+            "type": "object"
+        },
+        "Specification": {
+            "additionalProperties": false,
+            "description": "A batch's output specification or a technology's input requirements (CDM-ID 400 to 660).",
+            "properties": {
+                "certificate_of_analysis": {
+                    "description": "For use on output batches. Should be provided to verify claims about specifications.",
+                    "format": "uri",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "color_generic": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ColorGeneric"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Describes the color of the materials, mostly used for recycling feedstocks."
+                },
+                "contaminants": {
+                    "items": {
+                        "$ref": "#/$defs/Contaminant"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "fabric_construction": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/FabricConstruction"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Used to describe finished products (garments and household textiles), some post-industrial waste (cuttings, off-cuts, rolled goods), clippings made during pre-processing, and other formats that include fabric pieces of any size"
+                },
+                "fiber_compositions": {
+                    "items": {
+                        "$ref": "#/$defs/FiberComposition"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "format": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Format"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Describes the general shape of the materials to give context to measurements provided in Physical Properties fields."
+                },
+                "internal_product_name": {
+                    "description": "Written name, determined by the actor producing the outputs or the actor buying the inputs",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "material_sources": {
+                    "description": "For input specifications, these terms define which streams the materials come from, including types of textile waste and other non-textile sources. If more than one source is used, this should be defined separately.",
+                    "items": {
+                        "$ref": "#/$defs/MaterialSource"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "physical_properties": {
+                    "items": {
+                        "$ref": "#/$defs/PhysicalProperty"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "recycled_content_in_outputs": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/YesNo"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "For use on output batches. This should be determined based on the input materials used."
+                },
+                "recycled_contents": {
+                    "items": {
+                        "$ref": "#/$defs/RecycledContent"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Specification",
+            "type": "object"
+        },
+        "YesNo": {
+            "description": "",
+            "enum": [
+                "yes",
+                "no"
+            ],
+            "title": "YesNo",
+            "type": "string"
+        }
+    },
+    "$id": "https://texroad-foundation.github.io/t2t-data-model/",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": false,
+    "description": "A batch's output specification or a technology's input requirements (CDM-ID 400 to 660).",
+    "metamodel_version": "1.12.0",
+    "properties": {
+        "certificate_of_analysis": {
+            "description": "For use on output batches. Should be provided to verify claims about specifications.",
+            "format": "uri",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "color_generic": {
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/ColorGeneric"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "description": "Describes the color of the materials, mostly used for recycling feedstocks."
+        },
+        "contaminants": {
+            "items": {
+                "$ref": "#/$defs/Contaminant"
+            },
+            "type": [
+                "array",
+                "null"
+            ]
+        },
+        "fabric_construction": {
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/FabricConstruction"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "description": "Used to describe finished products (garments and household textiles), some post-industrial waste (cuttings, off-cuts, rolled goods), clippings made during pre-processing, and other formats that include fabric pieces of any size"
+        },
+        "fiber_compositions": {
+            "items": {
+                "$ref": "#/$defs/FiberComposition"
+            },
+            "type": [
+                "array",
+                "null"
+            ]
+        },
+        "format": {
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/Format"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "description": "Describes the general shape of the materials to give context to measurements provided in Physical Properties fields."
+        },
+        "internal_product_name": {
+            "description": "Written name, determined by the actor producing the outputs or the actor buying the inputs",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "material_sources": {
+            "description": "For input specifications, these terms define which streams the materials come from, including types of textile waste and other non-textile sources. If more than one source is used, this should be defined separately.",
+            "items": {
+                "$ref": "#/$defs/MaterialSource"
+            },
+            "type": [
+                "array",
+                "null"
+            ]
+        },
+        "physical_properties": {
+            "items": {
+                "$ref": "#/$defs/PhysicalProperty"
+            },
+            "type": [
+                "array",
+                "null"
+            ]
+        },
+        "recycled_content_in_outputs": {
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/YesNo"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "description": "For use on output batches. This should be determined based on the input materials used."
+        },
+        "recycled_contents": {
+            "items": {
+                "$ref": "#/$defs/RecycledContent"
+            },
+            "type": [
+                "array",
+                "null"
+            ]
+        }
+    },
+    "title": "t2t_data_model",
+    "type": "object",
+    "version": "0.1.0"
+}
+

@@ -1,0 +1,4 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_amount_unit/percent_of_total_batch_weight,percent_of_total_batch_weight,% of total batch weight,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_amount_unit/percent_of_total_fiber_composition,percent_of_total_fiber_composition,% of total fiber composition,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_amount_unit/ppm,ppm,PPM,,,

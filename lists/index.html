@@ -1,0 +1,2021 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://texroad-foundation.github.io/t2t-data-model/lists/">
+      
+      
+        <link rel="prev" href="../fields/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Values lists - t2t-data-model</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+      
+
+
+    
+    
+
+      
+    
+<script src="../assets/pymdownx-extras/material-extra-theme-2ek1P7jT.js" type="text/javascript"></script>
+<script src="../assets/pymdownx-extras/material-extra-3rdparty-BUCF4rjN.js" type="text/javascript"></script>
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../css/pandas-dataframe.css">
+    
+      <link rel="stylesheet" href="../assets/pymdownx-extras/extra-c6ab11540a.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#values-lists" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="header.title"
+  >
+    <a
+      href="https://texroad-foundation.github.io/t2t-data-model/"
+      title="t2t-data-model"
+      class="md-header__button md-logo"
+      aria-label="t2t-data-model"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            t2t-data-model
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Values lists
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      <div class="md-header-nav__scheme md-header-nav__button md-source__icon md-icon">
+          <a
+            href="javascript:toggleScheme();"
+            title="Light mode"
+            class="light-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="Dark mode"
+            class="dark-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="System preference"
+            class="system-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+          </a>
+           <a
+            href="javascript:toggleScheme();"
+            title="Unknown scheme"
+            class="unknown-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg>
+          </a>
+      </div>
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/texroad-foundation/t2t-data-model" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="t2t-data-model" class="md-nav__button md-logo" aria-label="t2t-data-model" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    t2t-data-model
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/texroad-foundation/t2t-data-model" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fields/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fields
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Values lists
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Values lists
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#material_source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color_generic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Color Generic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiber_composition_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiber Composition Name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiber_composition_threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiber Composition Threshold
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_coatings_and_finishes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Coatings and finishes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_dyes_and_pigments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Dyes and pigments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_soft_trims_and_prints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Soft trims and prints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_hard_trims" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Hard trims
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_other_materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Other materials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_amount_unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Amount Unit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Threshold
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical_property_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Property Name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical_property_unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Property Unit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fabric_construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fabric Construction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yes_no" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Yes / No
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#material_source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color_generic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Color Generic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiber_composition_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiber Composition Name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiber_composition_threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiber Composition Threshold
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_coatings_and_finishes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Coatings and finishes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_dyes_and_pigments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Dyes and pigments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_soft_trims_and_prints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Soft trims and prints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_hard_trims" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Hard trims
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_other_materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Type &gt; Other materials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_amount_unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Amount Unit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Threshold
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contaminant_check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contaminant Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical_property_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Property Name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical_property_unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Property Unit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fabric_construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fabric Construction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yes_no" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Yes / No
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="values-lists">Values lists</h1>
+<p>Each list as published: a value's code is what a record holds, its label what people see. Each list is also published as SKOS (<code>.ttl</code>) and CSV.</p>
+<h2 id="material_source">Material Source</h2>
+<p>Used by <a href="../fields/#material_sources">400.00 Material Source 1</a>, <a href="../fields/#recycled_content_source">650.10 Recycled Content 1 Source</a>. Download: <a href="../schema/lists/material_source.ttl">SKOS</a> · <a href="../schema/lists/material_source.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="material_source-post_industrial"></span><code>post_industrial</code></td>
+<td>Post-industrial</td>
+<td>Textile waste from manufacturing, before products reach the market.</td>
+</tr>
+<tr>
+<td><span id="material_source-pre_consumer"></span><code>pre_consumer</code></td>
+<td>Pre-consumer</td>
+<td>Finished textile products that were never sold to consumers.</td>
+</tr>
+<tr>
+<td><span id="material_source-post_consumer_residential"></span><code>post_consumer_residential</code></td>
+<td>Post-consumer, Residential</td>
+<td>Textile waste discarded by individual households after consumer use.</td>
+</tr>
+<tr>
+<td><span id="material_source-post_consumer_commercial"></span><code>post_consumer_commercial</code></td>
+<td>Post-consumer, Commercial</td>
+<td>Textile waste discarded after use by businesses such as hotels, hospitals, or offices.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="color_generic">Color Generic</h2>
+<p>Used by <a href="../fields/#color_generic">510.00 Color Generic</a>. Download: <a href="../schema/lists/color_generic.ttl">SKOS</a> · <a href="../schema/lists/color_generic.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="color_generic-multicoloured"></span><code>multicoloured</code></td>
+<td>Multicoloured</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-mostly_dark_colors"></span><code>mostly_dark_colors</code></td>
+<td>Mostly dark colors</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-mostly_light_colors"></span><code>mostly_light_colors</code></td>
+<td>Mostly light colors</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-undyed"></span><code>undyed</code></td>
+<td>Undyed</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-white"></span><code>white</code></td>
+<td>White</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-indigo"></span><code>indigo</code></td>
+<td>Indigo</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-red"></span><code>red</code></td>
+<td>Red</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-pink"></span><code>pink</code></td>
+<td>Pink</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-orange"></span><code>orange</code></td>
+<td>Orange</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-yellow"></span><code>yellow</code></td>
+<td>Yellow</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-green"></span><code>green</code></td>
+<td>Green</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-blue"></span><code>blue</code></td>
+<td>Blue</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-brown"></span><code>brown</code></td>
+<td>Brown</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-grey"></span><code>grey</code></td>
+<td>Grey</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-purple"></span><code>purple</code></td>
+<td>Purple</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-navy"></span><code>navy</code></td>
+<td>Navy</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="color_generic-black"></span><code>black</code></td>
+<td>Black</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="fiber_composition_name">Fiber Composition Name</h2>
+<p>Used by <a href="../fields/#fiber_composition_name">520.00 Fiber Composition 1 Name</a>, <a href="../fields/#contaminant_name">530.10 Contaminant 1 Name</a>. Download: <a href="../schema/lists/fiber_composition_name.ttl">SKOS</a> · <a href="../schema/lists/fiber_composition_name.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="fiber_composition_name-acrylic"></span><code>acrylic</code></td>
+<td>Acrylic</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-aramid"></span><code>aramid</code></td>
+<td>Aramid</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-bamboo"></span><code>bamboo</code></td>
+<td>Bamboo</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-carbon"></span><code>carbon</code></td>
+<td>Carbon</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-cashmere"></span><code>cashmere</code></td>
+<td>Cashmere</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-cotton"></span><code>cotton</code></td>
+<td>Cotton</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-elastane"></span><code>elastane</code></td>
+<td>Elastane</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-hemp"></span><code>hemp</code></td>
+<td>Hemp</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-jute"></span><code>jute</code></td>
+<td>Jute</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-linen"></span><code>linen</code></td>
+<td>Linen</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-lyocell"></span><code>lyocell</code></td>
+<td>Lyocell</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-modal"></span><code>modal</code></td>
+<td>Modal</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-plant_fiber_other"></span><code>plant_fiber_other</code></td>
+<td>Plant fiber (other)</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-polyamide"></span><code>polyamide</code></td>
+<td>Polyamide</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-polyamide_6"></span><code>polyamide_6</code></td>
+<td>Polyamide 6</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-polyamide_66"></span><code>polyamide_66</code></td>
+<td>Polyamide 66</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-polyester"></span><code>polyester</code></td>
+<td>Polyester</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-silk"></span><code>silk</code></td>
+<td>Silk</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-viscose"></span><code>viscose</code></td>
+<td>Viscose</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-wool"></span><code>wool</code></td>
+<td>Wool</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-other_animal_fibers"></span><code>other_animal_fibers</code></td>
+<td>Other animal fibers</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-other_cellulosic_fibers"></span><code>other_cellulosic_fibers</code></td>
+<td>Other cellulosic fibers</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_name-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="fiber_composition_threshold">Fiber Composition Threshold</h2>
+<p>Used by <a href="../fields/#fiber_composition_threshold">520.20 Fiber Composition 1 Threshold</a>. Download: <a href="../schema/lists/fiber_composition_threshold.ttl">SKOS</a> · <a href="../schema/lists/fiber_composition_threshold.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="fiber_composition_threshold-minimum"></span><code>minimum</code></td>
+<td>Minimum</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_threshold-maximum"></span><code>maximum</code></td>
+<td>Maximum</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fiber_composition_threshold-amount_listed"></span><code>amount_listed</code></td>
+<td>Amount listed</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_type">Contaminant Type</h2>
+<p>Used by <a href="../fields/#contaminant_type">530.00 Contaminant 1 Type</a>. Download: <a href="../schema/lists/contaminant_type.ttl">SKOS</a> · <a href="../schema/lists/contaminant_type.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_type-fibers"></span><code>fibers</code></td>
+<td>Fibers</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_type-coatings_and_finishes"></span><code>coatings_and_finishes</code></td>
+<td>Coatings and finishes</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_type-dyes_and_pigments"></span><code>dyes_and_pigments</code></td>
+<td>Dyes and pigments</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_type-soft_trims_and_prints"></span><code>soft_trims_and_prints</code></td>
+<td>Soft trims and prints</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_type-hard_trims"></span><code>hard_trims</code></td>
+<td>Hard trims</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_type-other_materials"></span><code>other_materials</code></td>
+<td>Other materials</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_coatings_and_finishes">Contaminant Type &gt; Coatings and finishes</h2>
+<p>Used by <a href="../fields/#contaminant_name">530.10 Contaminant 1 Name</a>. Download: <a href="../schema/lists/contaminant_coatings_and_finishes.ttl">SKOS</a> · <a href="../schema/lists/contaminant_coatings_and_finishes.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-uv_resistant"></span><code>uv_resistant</code></td>
+<td>UV resistant</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-flame_retardant"></span><code>flame_retardant</code></td>
+<td>Flame retardant</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-fire_resistant"></span><code>fire_resistant</code></td>
+<td>Fire resistant</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-antimicrobial"></span><code>antimicrobial</code></td>
+<td>Antimicrobial</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-insect_repellent"></span><code>insect_repellent</code></td>
+<td>Insect repellent</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-non_slip_dimensional_stability"></span><code>non_slip_dimensional_stability</code></td>
+<td>Non-slip/dimensional stability</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-antistatic"></span><code>antistatic</code></td>
+<td>Antistatic</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-water_repellent"></span><code>water_repellent</code></td>
+<td>Water repellent</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-dirt_repellent"></span><code>dirt_repellent</code></td>
+<td>Dirt repellent</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-silicone"></span><code>silicone</code></td>
+<td>Silicone</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-elastomeric"></span><code>elastomeric</code></td>
+<td>Elastomeric</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-fabric_softening"></span><code>fabric_softening</code></td>
+<td>Fabric softening</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-fabric_stiffness"></span><code>fabric_stiffness</code></td>
+<td>Fabric stiffness</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-wrinkle_resistant"></span><code>wrinkle_resistant</code></td>
+<td>Wrinkle resistant</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-fabric_hand"></span><code>fabric_hand</code></td>
+<td>Fabric hand</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-anti_pilling"></span><code>anti_pilling</code></td>
+<td>Anti-pilling</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_coatings_and_finishes-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_dyes_and_pigments">Contaminant Type &gt; Dyes and pigments</h2>
+<p>Used by <a href="../fields/#contaminant_name">530.10 Contaminant 1 Name</a>. Download: <a href="../schema/lists/contaminant_dyes_and_pigments.ttl">SKOS</a> · <a href="../schema/lists/contaminant_dyes_and_pigments.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_dyes_and_pigments-natural_dyes"></span><code>natural_dyes</code></td>
+<td>Natural dyes</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_dyes_and_pigments-acid"></span><code>acid</code></td>
+<td>Acid</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_dyes_and_pigments-basic"></span><code>basic</code></td>
+<td>Basic</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_dyes_and_pigments-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_soft_trims_and_prints">Contaminant Type &gt; Soft trims and prints</h2>
+<p>Used by <a href="../fields/#contaminant_name">530.10 Contaminant 1 Name</a>. Download: <a href="../schema/lists/contaminant_soft_trims_and_prints.ttl">SKOS</a> · <a href="../schema/lists/contaminant_soft_trims_and_prints.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-tape"></span><code>tape</code></td>
+<td>Tape</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-binding"></span><code>binding</code></td>
+<td>Binding</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-piping"></span><code>piping</code></td>
+<td>Piping</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-flag_label"></span><code>flag_label</code></td>
+<td>(Flag)label</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-interlining"></span><code>interlining</code></td>
+<td>Interlining</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-sewing_thread"></span><code>sewing_thread</code></td>
+<td>Sewing thread</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-drawcord"></span><code>drawcord</code></td>
+<td>Drawcord</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-hook_and_loop_closure"></span><code>hook_and_loop_closure</code></td>
+<td>Hook &amp; loop closure</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-heat_transfer"></span><code>heat_transfer</code></td>
+<td>Heat transfer</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-direct_screen_print"></span><code>direct_screen_print</code></td>
+<td>Direct screen print</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-pigment_print"></span><code>pigment_print</code></td>
+<td>Pigment print</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_soft_trims_and_prints-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_hard_trims">Contaminant Type &gt; Hard trims</h2>
+<p>Used by <a href="../fields/#contaminant_name">530.10 Contaminant 1 Name</a>. Download: <a href="../schema/lists/contaminant_hard_trims.ttl">SKOS</a> · <a href="../schema/lists/contaminant_hard_trims.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_hard_trims-button"></span><code>button</code></td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-snap_button"></span><code>snap_button</code></td>
+<td>Snap button</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-cord_stopper"></span><code>cord_stopper</code></td>
+<td>Cord stopper</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-aglet"></span><code>aglet</code></td>
+<td>Aglet</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-metal_zip"></span><code>metal_zip</code></td>
+<td>Metal zip</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-plastic_zip"></span><code>plastic_zip</code></td>
+<td>Plastic zip</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-puller"></span><code>puller</code></td>
+<td>Puller</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-hook_and_eye_closure"></span><code>hook_and_eye_closure</code></td>
+<td>Hook &amp; eye closure</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-buckle"></span><code>buckle</code></td>
+<td>Buckle</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-rivet"></span><code>rivet</code></td>
+<td>Rivet</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-studs"></span><code>studs</code></td>
+<td>Studs</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-sequins"></span><code>sequins</code></td>
+<td>Sequins</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_hard_trims-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_other_materials">Contaminant Type &gt; Other materials</h2>
+<p>Used by <a href="../fields/#contaminant_name">530.10 Contaminant 1 Name</a>. Download: <a href="../schema/lists/contaminant_other_materials.ttl">SKOS</a> · <a href="../schema/lists/contaminant_other_materials.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_other_materials-acrylic_polymer"></span><code>acrylic_polymer</code></td>
+<td>Acrylic (polymer)</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-silicone"></span><code>silicone</code></td>
+<td>Silicone</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-polyacrylate"></span><code>polyacrylate</code></td>
+<td>Polyacrylate</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-polyvinyl_chloride"></span><code>polyvinyl_chloride</code></td>
+<td>Polyvinyl chloride</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-polytetrafluoroethylene"></span><code>polytetrafluoroethylene</code></td>
+<td>Polytetrafluoroethylene</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-polyoxymethylene"></span><code>polyoxymethylene</code></td>
+<td>Polyoxymethylene</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-acrylonitrile_butadiene_styrene"></span><code>acrylonitrile_butadiene_styrene</code></td>
+<td>Acrylonitrile butadiene styrene</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-aluminium"></span><code>aluminium</code></td>
+<td>Aluminium</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-brass"></span><code>brass</code></td>
+<td>Brass</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-zinc"></span><code>zinc</code></td>
+<td>Zinc</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-stainless_steel"></span><code>stainless_steel</code></td>
+<td>Stainless steel</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-copper"></span><code>copper</code></td>
+<td>Copper</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-ferrous_metal"></span><code>ferrous_metal</code></td>
+<td>Ferrous metal</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-non_ferrous_metal"></span><code>non_ferrous_metal</code></td>
+<td>Non-ferrous metal</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-polylactide"></span><code>polylactide</code></td>
+<td>Polylactide</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-polyethylene_furanoate"></span><code>polyethylene_furanoate</code></td>
+<td>Polyethylene furanoate</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-aramid"></span><code>aramid</code></td>
+<td>Aramid</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-carbon"></span><code>carbon</code></td>
+<td>Carbon</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-glass"></span><code>glass</code></td>
+<td>Glass</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-pfas"></span><code>pfas</code></td>
+<td>PFAS</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_other_materials-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_amount_unit">Contaminant Amount Unit</h2>
+<p>Used by <a href="../fields/#contaminant_amount_unit">530.21 Contaminant 1 Amount Unit</a>. Download: <a href="../schema/lists/contaminant_amount_unit.ttl">SKOS</a> · <a href="../schema/lists/contaminant_amount_unit.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_amount_unit-percent_of_total_batch_weight"></span><code>percent_of_total_batch_weight</code></td>
+<td>% of total batch weight</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_amount_unit-percent_of_total_fiber_composition"></span><code>percent_of_total_fiber_composition</code></td>
+<td>% of total fiber composition</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_amount_unit-ppm"></span><code>ppm</code></td>
+<td>PPM</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_threshold">Contaminant Threshold</h2>
+<p>Used by <a href="../fields/#contaminant_threshold">530.22 Contaminant 1 Threshold</a>. Download: <a href="../schema/lists/contaminant_threshold.ttl">SKOS</a> · <a href="../schema/lists/contaminant_threshold.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_threshold-measured_value"></span><code>measured_value</code></td>
+<td>Measured value</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_threshold-maximum"></span><code>maximum</code></td>
+<td>Maximum</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_threshold-trace_amounts_accepted"></span><code>trace_amounts_accepted</code></td>
+<td>Trace amounts accepted</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_threshold-zero_tolerance"></span><code>zero_tolerance</code></td>
+<td>Zero tolerance</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contaminant_check">Contaminant Check</h2>
+<p>Used by <a href="../fields/#contaminant_check">530.30 Contaminant 1 Check</a>. Download: <a href="../schema/lists/contaminant_check.ttl">SKOS</a> · <a href="../schema/lists/contaminant_check.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="contaminant_check-not_evaluated"></span><code>not_evaluated</code></td>
+<td>Not evaluated</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_check-detected"></span><code>detected</code></td>
+<td>Detected</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="contaminant_check-not_detected"></span><code>not_detected</code></td>
+<td>Not detected</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="format">Format</h2>
+<p>Used by <a href="../fields/#format">600.00 Format</a>. Download: <a href="../schema/lists/format.ttl">SKOS</a> · <a href="../schema/lists/format.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="format-clippings"></span><code>clippings</code></td>
+<td>Clippings</td>
+<td>Produced by chopping or cutting textiles into smaller pieces during feedstock preparation</td>
+</tr>
+<tr>
+<td><span id="format-cutting_waste"></span><code>cutting_waste</code></td>
+<td>Cutting waste</td>
+<td>Produced by manufacturers when cutting markers</td>
+</tr>
+<tr>
+<td><span id="format-dust_powder"></span><code>dust_powder</code></td>
+<td>Dust/powder</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-fiber"></span><code>fiber</code></td>
+<td>Fiber</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-flakes"></span><code>flakes</code></td>
+<td>Flakes</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-garments_linens_household_textiles"></span><code>garments_linens_household_textiles</code></td>
+<td>Garments / linens / household textiles</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-granules"></span><code>granules</code></td>
+<td>Granules</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-monomers"></span><code>monomers</code></td>
+<td>Monomers</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-opened_fiber"></span><code>opened_fiber</code></td>
+<td>Opened fiber</td>
+<td>Textile that has been shredded or torn into fiber or a mix of fiber and pieces of textiles during feedstock preparation</td>
+</tr>
+<tr>
+<td><span id="format-pellets"></span><code>pellets</code></td>
+<td>Pellets</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-polymers"></span><code>polymers</code></td>
+<td>Polymers</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-pulp"></span><code>pulp</code></td>
+<td>Pulp</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-sliver"></span><code>sliver</code></td>
+<td>Sliver</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-trim"></span><code>trim</code></td>
+<td>Trim</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-yarn"></span><code>yarn</code></td>
+<td>Yarn</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="format-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="physical_property_name">Physical Property Name</h2>
+<p>Used by <a href="../fields/#physical_property_name">600.10 Physical Property 1 Name</a>. Download: <a href="../schema/lists/physical_property_name.ttl">SKOS</a> · <a href="../schema/lists/physical_property_name.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="physical_property_name-brightness"></span><code>brightness</code></td>
+<td>Brightness</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-crystallinity"></span><code>crystallinity</code></td>
+<td>Crystallinity</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-degree_of_polymerization_dp"></span><code>degree_of_polymerization_dp</code></td>
+<td>Degree of Polymerization (DP)</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-density"></span><code>density</code></td>
+<td>Density</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-fiber_length"></span><code>fiber_length</code></td>
+<td>Fiber Length</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-intrinsic_viscosity_iv"></span><code>intrinsic_viscosity_iv</code></td>
+<td>Intrinsic Viscosity (IV)</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-moisture_dry_matter_content"></span><code>moisture_dry_matter_content</code></td>
+<td>Moisture/Dry Matter Content</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-molecular_weight_mw_mn"></span><code>molecular_weight_mw_mn</code></td>
+<td>Molecular Weight (Mw/Mn)</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-piece_size"></span><code>piece_size</code></td>
+<td>Piece size</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-rheology"></span><code>rheology</code></td>
+<td>Rheology</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-thermal_properties_tm_tg"></span><code>thermal_properties_tm_tg</code></td>
+<td>Thermal Properties (Tm, Tg)</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_name-other"></span><code>other</code></td>
+<td>Other</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="physical_property_unit">Physical Property Unit</h2>
+<p>Used by <a href="../fields/#physical_property_unit">600.21 Physical Property 1 Unit</a>. Download: <a href="../schema/lists/physical_property_unit.ttl">SKOS</a> · <a href="../schema/lists/physical_property_unit.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="physical_property_unit-cm"></span><code>cm</code></td>
+<td>cm</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_unit-delta_e"></span><code>delta_e</code></td>
+<td>∆E</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_unit-ml_per_g"></span><code>ml_per_g</code></td>
+<td>mL/g</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_unit-dl_per_g"></span><code>dl_per_g</code></td>
+<td>dL/g</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_unit-g_per_cm3"></span><code>g_per_cm3</code></td>
+<td>g/cm^3</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="physical_property_unit-percent"></span><code>percent</code></td>
+<td>%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="fabric_construction">Fabric Construction</h2>
+<p>Used by <a href="../fields/#fabric_construction">600.30 Fabric Construction</a>. Download: <a href="../schema/lists/fabric_construction.ttl">SKOS</a> · <a href="../schema/lists/fabric_construction.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="fabric_construction-knit"></span><code>knit</code></td>
+<td>Knit</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fabric_construction-woven"></span><code>woven</code></td>
+<td>Woven</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fabric_construction-non_woven"></span><code>non_woven</code></td>
+<td>Non-woven</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="fabric_construction-mixed_construction"></span><code>mixed_construction</code></td>
+<td>Mixed construction</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="yes_no">Yes / No</h2>
+<p>Used by <a href="../fields/#contaminant_hazardous_substance">530.40 Contaminant 1 Hazardous Substance</a>, <a href="../fields/#recycled_content_in_outputs">650.00 Recycled Content in Outputs</a>. Download: <a href="../schema/lists/yes_no.ttl">SKOS</a> · <a href="../schema/lists/yes_no.csv">CSV</a></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Label</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span id="yes_no-yes"></span><code>yes</code></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><span id="yes_no-no"></span><code>no</code></td>
+<td>No</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+
+<footer class="md-footer">
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="footer.title"
+    >
+      
+        <a
+          href="../fields/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Fields
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        with emoji by
+        <a href="https://github.com/twitter/twemoji" target="_blank" rel="noopener">
+          Twemoji
+        </a>
+      </div>
+      
+<div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link", "header.autohide", "navigation.expand", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../assets/pymdownx-extras/extra-loader-B5CKpNQx.js"></script>
+      
+    
+  </body>
+</html>

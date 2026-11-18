@@ -1,0 +1,54 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/cm> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> ;
+    skos:notation "cm" ;
+    skos:prefLabel "cm"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/delta_e> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> ;
+    skos:notation "delta_e" ;
+    skos:prefLabel "∆E"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/dl_per_g> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> ;
+    skos:notation "dl_per_g" ;
+    skos:prefLabel "dL/g"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/g_per_cm3> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> ;
+    skos:notation "g_per_cm3" ;
+    skos:prefLabel "g/cm^3"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/ml_per_g> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> ;
+    skos:notation "ml_per_g" ;
+    skos:prefLabel "mL/g"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/percent> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> ;
+    skos:notation "percent" ;
+    skos:prefLabel "%"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Physical Property Unit"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/cm>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/delta_e>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/dl_per_g>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/g_per_cm3>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/ml_per_g>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/percent> .
+

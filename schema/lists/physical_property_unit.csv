@@ -1,0 +1,7 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/cm,cm,cm,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/delta_e,delta_e,∆E,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/ml_per_g,ml_per_g,mL/g,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/dl_per_g,dl_per_g,dL/g,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/g_per_cm3,g_per_cm3,g/cm^3,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/percent,percent,%,,,

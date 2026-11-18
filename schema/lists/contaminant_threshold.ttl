@@ -1,0 +1,40 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/maximum> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> ;
+    skos:notation "maximum" ;
+    skos:prefLabel "Maximum"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/measured_value> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> ;
+    skos:notation "measured_value" ;
+    skos:prefLabel "Measured value"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/trace_amounts_accepted> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> ;
+    skos:notation "trace_amounts_accepted" ;
+    skos:prefLabel "Trace amounts accepted"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/zero_tolerance> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> ;
+    skos:notation "zero_tolerance" ;
+    skos:prefLabel "Zero tolerance"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Contaminant Threshold"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/maximum>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/measured_value>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/trace_amounts_accepted>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/zero_tolerance> .
+

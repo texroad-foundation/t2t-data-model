@@ -1,0 +1,138 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/black> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "black" ;
+    skos:prefLabel "Black"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/blue> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "blue" ;
+    skos:prefLabel "Blue"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/brown> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "brown" ;
+    skos:prefLabel "Brown"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/green> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "green" ;
+    skos:prefLabel "Green"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/grey> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "grey" ;
+    skos:prefLabel "Grey"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/indigo> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "indigo" ;
+    skos:prefLabel "Indigo"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/mostly_dark_colors> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "mostly_dark_colors" ;
+    skos:prefLabel "Mostly dark colors"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/mostly_light_colors> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "mostly_light_colors" ;
+    skos:prefLabel "Mostly light colors"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/multicoloured> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "multicoloured" ;
+    skos:prefLabel "Multicoloured"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/navy> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "navy" ;
+    skos:prefLabel "Navy"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/orange> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "orange" ;
+    skos:prefLabel "Orange"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/other> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "other" ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/pink> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "pink" ;
+    skos:prefLabel "Pink"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/purple> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "purple" ;
+    skos:prefLabel "Purple"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/red> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "red" ;
+    skos:prefLabel "Red"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/undyed> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "undyed" ;
+    skos:prefLabel "Undyed"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/white> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "white" ;
+    skos:prefLabel "White"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/yellow> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> ;
+    skos:notation "yellow" ;
+    skos:prefLabel "Yellow"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/color_generic> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Color Generic"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/black>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/blue>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/brown>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/green>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/grey>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/indigo>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/mostly_dark_colors>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/mostly_light_colors>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/multicoloured>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/navy>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/orange>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/pink>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/purple>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/red>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/undyed>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/white>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/yellow> .
+

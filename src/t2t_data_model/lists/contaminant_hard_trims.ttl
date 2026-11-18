@@ -1,0 +1,116 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/aglet> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "aglet" ;
+    skos:prefLabel "Aglet"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/buckle> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "buckle" ;
+    skos:prefLabel "Buckle"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/button> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "button" ;
+    skos:prefLabel "Button"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/cord_stopper> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "cord_stopper" ;
+    skos:prefLabel "Cord stopper"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/hook_and_eye_closure> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "hook_and_eye_closure" ;
+    skos:prefLabel "Hook & eye closure"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/metal_zip> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "metal_zip" ;
+    skos:prefLabel "Metal zip"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/other> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "other" ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/plastic_zip> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "plastic_zip" ;
+    skos:prefLabel "Plastic zip"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/puller> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "puller" ;
+    skos:prefLabel "Puller"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/rivet> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "rivet" ;
+    skos:prefLabel "Rivet"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/sequins> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "sequins" ;
+    skos:prefLabel "Sequins"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/snap_button> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "snap_button" ;
+    skos:prefLabel "Snap button"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/studs> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> ;
+    skos:notation "studs" ;
+    skos:prefLabel "Studs"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Contaminant Type > Hard trims"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/aglet>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/buckle>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/button>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/cord_stopper>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/hook_and_eye_closure>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/metal_zip>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/plastic_zip>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/puller>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/rivet>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/sequins>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/snap_button>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/studs> .
+

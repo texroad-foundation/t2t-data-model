@@ -1,0 +1,26 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/yes_no/no> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/yes_no> ;
+    skos:notation "no" ;
+    skos:prefLabel "No"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/yes_no> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/yes_no/yes> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/yes_no> ;
+    skos:notation "yes" ;
+    skos:prefLabel "Yes"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/yes_no> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/yes_no> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Yes / No"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/yes_no/no>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/yes_no/yes> .
+

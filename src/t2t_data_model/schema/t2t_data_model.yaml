@@ -1,0 +1,1105 @@
+id: https://texroad-foundation.github.io/t2t-data-model/
+name: t2t_data_model
+title: Common Data Model for Textile to Textile Recycling — Specifications
+description: The Specifications fields (CDM-ID 400–660) of the Common Data Model for Textile to Textile Recycling, and their
+  values lists.
+version: 0.1.0
+license: https://creativecommons.org/licenses/by/4.0/
+created_by: https://texroad.org
+see_also:
+- https://github.com/texroad-foundation/t2t-data-model
+in_language: en
+keywords:
+- textile recycling
+- textile to textile
+- feedstock
+- specification
+- contaminant
+prefixes:
+  t2t: https://texroad-foundation.github.io/t2t-data-model/
+  linkml: https://w3id.org/linkml/
+default_prefix: t2t
+default_range: string
+imports:
+- linkml:types
+classes:
+  Specification:
+    tree_root: true
+    description: A batch's output specification or a technology's input requirements (CDM-ID 400 to 660).
+    slots:
+    - material_sources
+    - internal_product_name
+    - color_generic
+    - fiber_compositions
+    - contaminants
+    - format
+    - physical_properties
+    - fabric_construction
+    - recycled_content_in_outputs
+    - recycled_contents
+    - certificate_of_analysis
+  FiberComposition:
+    description: One Fiber Composition entry, repeated as a group (the fields with a 1 in their name).
+    slots:
+    - fiber_composition_name
+    - fiber_composition_value
+    - fiber_composition_threshold
+  Contaminant:
+    description: One Contaminant entry, repeated as a group (the fields with a 1 in their name).
+    slots:
+    - contaminant_type
+    - contaminant_name
+    - contaminant_amount
+    - contaminant_amount_unit
+    - contaminant_threshold
+    - contaminant_check
+    - contaminant_hazardous_substance
+    - contaminant_sds
+    - contaminant_explanation
+    - contaminant_evidence
+    rules:
+    - description: A Fibers contaminant is named from the Fiber Composition Name list.
+      preconditions:
+        slot_conditions:
+          contaminant_type:
+            equals_string: fibers
+      postconditions:
+        slot_conditions:
+          contaminant_name:
+            equals_string_in:
+            - acrylic
+            - aramid
+            - bamboo
+            - carbon
+            - cashmere
+            - cotton
+            - elastane
+            - hemp
+            - jute
+            - linen
+            - lyocell
+            - modal
+            - plant_fiber_other
+            - polyamide
+            - polyamide_6
+            - polyamide_66
+            - polyester
+            - silk
+            - viscose
+            - wool
+            - other_animal_fibers
+            - other_cellulosic_fibers
+            - other
+            required: false
+    - description: A Coatings and finishes contaminant is named from the Contaminant Type > Coatings and finishes list.
+      preconditions:
+        slot_conditions:
+          contaminant_type:
+            equals_string: coatings_and_finishes
+      postconditions:
+        slot_conditions:
+          contaminant_name:
+            equals_string_in:
+            - uv_resistant
+            - flame_retardant
+            - fire_resistant
+            - antimicrobial
+            - insect_repellent
+            - non_slip_dimensional_stability
+            - antistatic
+            - water_repellent
+            - dirt_repellent
+            - silicone
+            - elastomeric
+            - fabric_softening
+            - fabric_stiffness
+            - wrinkle_resistant
+            - fabric_hand
+            - anti_pilling
+            - other
+            required: false
+    - description: A Dyes and pigments contaminant is named from the Contaminant Type > Dyes and pigments list.
+      preconditions:
+        slot_conditions:
+          contaminant_type:
+            equals_string: dyes_and_pigments
+      postconditions:
+        slot_conditions:
+          contaminant_name:
+            equals_string_in:
+            - natural_dyes
+            - acid
+            - basic
+            - other
+            required: false
+    - description: A Soft trims and prints contaminant is named from the Contaminant Type > Soft trims and prints list.
+      preconditions:
+        slot_conditions:
+          contaminant_type:
+            equals_string: soft_trims_and_prints
+      postconditions:
+        slot_conditions:
+          contaminant_name:
+            equals_string_in:
+            - tape
+            - binding
+            - piping
+            - flag_label
+            - interlining
+            - sewing_thread
+            - drawcord
+            - hook_and_loop_closure
+            - heat_transfer
+            - direct_screen_print
+            - pigment_print
+            - other
+            required: false
+    - description: A Hard trims contaminant is named from the Contaminant Type > Hard trims list.
+      preconditions:
+        slot_conditions:
+          contaminant_type:
+            equals_string: hard_trims
+      postconditions:
+        slot_conditions:
+          contaminant_name:
+            equals_string_in:
+            - button
+            - snap_button
+            - cord_stopper
+            - aglet
+            - metal_zip
+            - plastic_zip
+            - puller
+            - hook_and_eye_closure
+            - buckle
+            - rivet
+            - studs
+            - sequins
+            - other
+            required: false
+    - description: A Other materials contaminant is named from the Contaminant Type > Other materials list.
+      preconditions:
+        slot_conditions:
+          contaminant_type:
+            equals_string: other_materials
+      postconditions:
+        slot_conditions:
+          contaminant_name:
+            equals_string_in:
+            - acrylic_polymer
+            - silicone
+            - polyacrylate
+            - polyvinyl_chloride
+            - polytetrafluoroethylene
+            - polyoxymethylene
+            - acrylonitrile_butadiene_styrene
+            - aluminium
+            - brass
+            - zinc
+            - stainless_steel
+            - copper
+            - ferrous_metal
+            - non_ferrous_metal
+            - polylactide
+            - polyethylene_furanoate
+            - aramid
+            - carbon
+            - glass
+            - pfas
+            - other
+            required: false
+    - description: A hazardous substance needs its SDS and explanation (530.41, 530.42).
+      preconditions:
+        slot_conditions:
+          contaminant_hazardous_substance:
+            equals_string: 'yes'
+      postconditions:
+        slot_conditions:
+          contaminant_sds:
+            required: true
+          contaminant_explanation:
+            required: true
+  PhysicalProperty:
+    description: One Physical Property entry, repeated as a group (the fields with a 1 in their name).
+    slots:
+    - physical_property_name
+    - physical_property_value
+    - physical_property_unit
+    - physical_property_verification_method
+  RecycledContent:
+    description: One Recycled Content entry, repeated as a group (the fields with a 1 in their name).
+    slots:
+    - recycled_content_source
+    - recycled_content_value
+slots:
+  material_sources:
+    title: Material Source 1
+    slot_uri: t2t:material_sources
+    description: For input specifications, these terms define which streams the materials come from, including types of textile
+      waste and other non-textile sources. If more than one source is used, this should be defined separately.
+    range: MaterialSource
+    multivalued: true
+    annotations:
+      cdm_id: '400.00'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  internal_product_name:
+    title: Internal Product Name
+    slot_uri: t2t:internal_product_name
+    description: Written name, determined by the actor producing the outputs or the actor buying the inputs
+    range: string
+    annotations:
+      cdm_id: '500.00'
+      type: Text
+      data_format: Alphanumeric text
+  color_generic:
+    title: Color Generic
+    slot_uri: t2t:color_generic
+    description: Describes the color of the materials, mostly used for recycling feedstocks.
+    range: ColorGeneric
+    annotations:
+      cdm_id: '510.00'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  fiber_composition_name:
+    title: Fiber Composition 1 Name
+    slot_uri: t2t:fiber_composition_name
+    description: Name of the desired or in-scope primary textile fiber or other material content (e.g. name of the monomer)
+      according to a standardized list. Fibers that are a contaminant should be listed in Contaminants data fields. In the
+      case that the primary in-scope material content is no longer textile, this data field is simply composition.
+    range: FiberCompositionName
+    annotations:
+      cdm_id: '520.00'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  fiber_composition_value:
+    title: Fiber Composition 1 Value
+    slot_uri: t2t:fiber_composition_value
+    description: '% of the total by weight for Fiber Composition 1 Name'
+    range: decimal
+    minimum_value: 0
+    maximum_value: 100
+    unit: &id001
+      symbol: '%'
+    annotations:
+      cdm_id: '520.10'
+      type: Percentage (0–100)
+      data_format: Number as a % (fixed format)
+  fiber_composition_threshold:
+    title: Fiber Composition 1 Threshold
+    slot_uri: t2t:fiber_composition_threshold
+    description: Describes how the numeric value in 520.10 should be applied - taken as a minimum, maximum, or absolute value
+    range: FiberCompositionThreshold
+    annotations:
+      cdm_id: '520.20'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  contaminant_type:
+    title: Contaminant 1 Type
+    slot_uri: t2t:contaminant_type
+    description: Describes the functional type of the contaminant.
+    range: ContaminantType
+    annotations:
+      cdm_id: '530.00'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  contaminant_name:
+    title: Contaminant 1 Name
+    slot_uri: t2t:contaminant_name
+    description: Describes the material the contaminant is made of.
+    any_of:
+    - range: FiberCompositionName
+    - range: ContaminantCoatingsAndFinishes
+    - range: ContaminantDyesAndPigments
+    - range: ContaminantSoftTrimsAndPrints
+    - range: ContaminantHardTrims
+    - range: ContaminantOtherMaterials
+    annotations:
+      cdm_id: '530.10'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  contaminant_amount:
+    title: Contaminant 1 Amount
+    slot_uri: t2t:contaminant_amount
+    description: Numeric quantification of the Contaminant
+    range: decimal
+    minimum_value: 0
+    annotations:
+      cdm_id: '530.20'
+      type: Decimal number (0 or more)
+      data_format: Number (fixed format)
+  contaminant_amount_unit:
+    title: Contaminant 1 Amount Unit
+    slot_uri: t2t:contaminant_amount_unit
+    description: Unit of measure for numeric quantification of impurity amount or threshold amount (if numerically quantified)
+    range: ContaminantAmountUnit
+    annotations:
+      cdm_id: '530.21'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  contaminant_threshold:
+    title: Contaminant 1 Threshold
+    slot_uri: t2t:contaminant_threshold
+    description: Defines control levels of the contaminant. This is used in a similar way as the threshold for fiber composition
+      to clarify expectations of contaminant control for suppliers or buyers.
+    range: ContaminantThreshold
+    annotations:
+      cdm_id: '530.22'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  contaminant_check:
+    title: Contaminant 1 Check
+    slot_uri: t2t:contaminant_check
+    description: Describes if the batch was checked on the presence of a certain contaminant.
+    range: ContaminantCheck
+    annotations:
+      cdm_id: '530.30'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  contaminant_hazardous_substance:
+    title: Contaminant 1 Hazardous Substance
+    slot_uri: t2t:contaminant_hazardous_substance
+    description: For output materials batches, this flags whether the contaminant appears on REACH restriction or candidate
+      list. If this is "yes", SDS and a brief explanation of their use of potential presence in the material batch is required.
+    range: YesNo
+    annotations:
+      cdm_id: '530.40'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  contaminant_sds:
+    title: Contaminant 1 SDS
+    slot_uri: t2t:contaminant_sds
+    description: Upload SDS for hazardous chemical on REACH restriction or candidate list. Required when Contaminant Hazard
+      is marked "yes".
+    range: uri
+    annotations:
+      cdm_id: '530.41'
+      type: Link to document
+      data_format: Document upload
+  contaminant_explanation:
+    title: Contaminant 1 Explanation
+    slot_uri: t2t:contaminant_explanation
+    description: Brief explanation of use of or contact with hazardous chemical on REACH restriction or candidate list. Required
+      when Contaminant Hazard is marked "yes".
+    range: string
+    annotations:
+      cdm_id: '530.42'
+      type: Text (multi-line)
+      data_format: Open text (multi-line)
+  contaminant_evidence:
+    title: Contaminant 1 Evidence
+    slot_uri: t2t:contaminant_evidence
+    description: Upload evidence to support claims related to explanation of hazardous substances.
+    range: uri
+    annotations:
+      cdm_id: '530.43'
+      type: Link to document
+      data_format: Document upload
+  format:
+    title: Format
+    slot_uri: t2t:format
+    description: Describes the general shape of the materials to give context to measurements provided in Physical Properties
+      fields.
+    range: Format
+    annotations:
+      cdm_id: '600.00'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  physical_property_name:
+    title: Physical Property 1 Name
+    slot_uri: t2t:physical_property_name
+    description: 'Describes measurable characteristics that are quantified in additional data fields.
+
+      This has a very, very broad application (e.g. fiber length, fabric width, viscosity, brightness)'
+    range: PhysicalPropertyName
+    annotations:
+      cdm_id: '600.10'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  physical_property_value:
+    title: Physical Property 1 Value
+    slot_uri: t2t:physical_property_value
+    description: Numerical value used to measure Physical Property
+    range: decimal
+    annotations:
+      cdm_id: '600.20'
+      type: Decimal number
+      data_format: Number (fixed format)
+  physical_property_unit:
+    title: Physical Property 1 Unit
+    slot_uri: t2t:physical_property_unit
+    description: Unit of the numerical value used for Physical Property Value.
+    range: PhysicalPropertyUnit
+    annotations:
+      cdm_id: '600.21'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  physical_property_verification_method:
+    title: Physical Property 1 Verification Method
+    slot_uri: t2t:physical_property_verification_method
+    description: Equipment or testing method used to measure Physical Property
+    range: string
+    annotations:
+      cdm_id: '600.22'
+      type: Text (multi-line)
+      data_format: Open text (multi-line)
+  fabric_construction:
+    title: Fabric Construction
+    slot_uri: t2t:fabric_construction
+    description: Used to describe finished products (garments and household textiles), some post-industrial waste (cuttings,
+      off-cuts, rolled goods), clippings made during pre-processing, and other formats that include fabric pieces of any size
+    range: FabricConstruction
+    annotations:
+      cdm_id: '600.30'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  recycled_content_in_outputs:
+    title: Recycled Content in Outputs
+    slot_uri: t2t:recycled_content_in_outputs
+    description: For use on output batches. This should be determined based on the input materials used.
+    range: YesNo
+    annotations:
+      cdm_id: '650.00'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  recycled_content_source:
+    title: Recycled Content 1 Source
+    slot_uri: t2t:recycled_content_source
+    description: For use on output batches. This should be determined based on the input materials used.
+    range: MaterialSource
+    annotations:
+      cdm_id: '650.10'
+      type: Code (from values list)
+      data_format: Text (from values list)
+  recycled_content_value:
+    title: Recycled Content 1 Value
+    slot_uri: t2t:recycled_content_value
+    description: Quantifies the amount of recycled content by percentage of total weight. If multiple recycled content sources
+      are used, this data should be provided separately in individual lines.
+    range: decimal
+    minimum_value: 0
+    maximum_value: 100
+    unit: *id001
+    annotations:
+      cdm_id: '650.20'
+      type: Percentage (0–100)
+      data_format: Number (fixed format)
+  certificate_of_analysis:
+    title: Certificate of Analysis
+    slot_uri: t2t:certificate_of_analysis
+    description: For use on output batches. Should be provided to verify claims about specifications.
+    range: uri
+    annotations:
+      cdm_id: '660.00'
+      type: Link to document
+      data_format: Document upload
+  fiber_compositions:
+    range: FiberComposition
+    multivalued: true
+    inlined_as_list: true
+  contaminants:
+    range: Contaminant
+    multivalued: true
+    inlined_as_list: true
+  physical_properties:
+    range: PhysicalProperty
+    multivalued: true
+    inlined_as_list: true
+  recycled_contents:
+    range: RecycledContent
+    multivalued: true
+    inlined_as_list: true
+enums:
+  MaterialSource:
+    title: Material Source
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/material_source
+    permissible_values:
+      post_industrial:
+        title: Post-industrial
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_industrial
+        description: Textile waste from manufacturing, before products reach the market.
+      pre_consumer:
+        title: Pre-consumer
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/material_source/pre_consumer
+        description: Finished textile products that were never sold to consumers.
+      post_consumer_residential:
+        title: Post-consumer, Residential
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_residential
+        description: Textile waste discarded by individual households after consumer use.
+      post_consumer_commercial:
+        title: Post-consumer, Commercial
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_commercial
+        description: Textile waste discarded after use by businesses such as hotels, hospitals, or offices.
+  ColorGeneric:
+    title: Color Generic
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic
+    permissible_values:
+      multicoloured:
+        title: Multicoloured
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/multicoloured
+      mostly_dark_colors:
+        title: Mostly dark colors
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/mostly_dark_colors
+      mostly_light_colors:
+        title: Mostly light colors
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/mostly_light_colors
+      undyed:
+        title: Undyed
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/undyed
+      white:
+        title: White
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/white
+      indigo:
+        title: Indigo
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/indigo
+      red:
+        title: Red
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/red
+      pink:
+        title: Pink
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/pink
+      orange:
+        title: Orange
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/orange
+      yellow:
+        title: Yellow
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/yellow
+      green:
+        title: Green
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/green
+      blue:
+        title: Blue
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/blue
+      brown:
+        title: Brown
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/brown
+      grey:
+        title: Grey
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/grey
+      purple:
+        title: Purple
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/purple
+      navy:
+        title: Navy
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/navy
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/other
+      black:
+        title: Black
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/color_generic/black
+  FiberCompositionName:
+    title: Fiber Composition Name
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name
+    permissible_values:
+      acrylic:
+        title: Acrylic
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/acrylic
+      aramid:
+        title: Aramid
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/aramid
+      bamboo:
+        title: Bamboo
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/bamboo
+      carbon:
+        title: Carbon
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/carbon
+      cashmere:
+        title: Cashmere
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/cashmere
+      cotton:
+        title: Cotton
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/cotton
+      elastane:
+        title: Elastane
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/elastane
+      hemp:
+        title: Hemp
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/hemp
+      jute:
+        title: Jute
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/jute
+      linen:
+        title: Linen
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/linen
+      lyocell:
+        title: Lyocell
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/lyocell
+      modal:
+        title: Modal
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/modal
+      plant_fiber_other:
+        title: Plant fiber (other)
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/plant_fiber_other
+      polyamide:
+        title: Polyamide
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide
+      polyamide_6:
+        title: Polyamide 6
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide_6
+      polyamide_66:
+        title: Polyamide 66
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyamide_66
+      polyester:
+        title: Polyester
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/polyester
+      silk:
+        title: Silk
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/silk
+      viscose:
+        title: Viscose
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/viscose
+      wool:
+        title: Wool
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/wool
+      other_animal_fibers:
+        title: Other animal fibers
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other_animal_fibers
+      other_cellulosic_fibers:
+        title: Other cellulosic fibers
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other_cellulosic_fibers
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_name/other
+  FiberCompositionThreshold:
+    title: Fiber Composition Threshold
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_threshold
+    permissible_values:
+      minimum:
+        title: Minimum
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_threshold/minimum
+      maximum:
+        title: Maximum
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_threshold/maximum
+      amount_listed:
+        title: Amount listed
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fiber_composition_threshold/amount_listed
+  ContaminantType:
+    title: Contaminant Type
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type
+    permissible_values:
+      fibers:
+        title: Fibers
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/fibers
+      coatings_and_finishes:
+        title: Coatings and finishes
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes
+      dyes_and_pigments:
+        title: Dyes and pigments
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/dyes_and_pigments
+      soft_trims_and_prints:
+        title: Soft trims and prints
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints
+      hard_trims:
+        title: Hard trims
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims
+      other_materials:
+        title: Other materials
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials
+  ContaminantCoatingsAndFinishes:
+    title: Contaminant Type > Coatings and finishes
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes
+    permissible_values:
+      uv_resistant:
+        title: UV resistant
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/uv_resistant
+      flame_retardant:
+        title: Flame retardant
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/flame_retardant
+      fire_resistant:
+        title: Fire resistant
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fire_resistant
+      antimicrobial:
+        title: Antimicrobial
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/antimicrobial
+      insect_repellent:
+        title: Insect repellent
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/insect_repellent
+      non_slip_dimensional_stability:
+        title: Non-slip/dimensional stability
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/non_slip_dimensional_stability
+      antistatic:
+        title: Antistatic
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/antistatic
+      water_repellent:
+        title: Water repellent
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/water_repellent
+      dirt_repellent:
+        title: Dirt repellent
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/dirt_repellent
+      silicone:
+        title: Silicone
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/silicone
+      elastomeric:
+        title: Elastomeric
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/elastomeric
+      fabric_softening:
+        title: Fabric softening
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_softening
+      fabric_stiffness:
+        title: Fabric stiffness
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_stiffness
+      wrinkle_resistant:
+        title: Wrinkle resistant
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/wrinkle_resistant
+      fabric_hand:
+        title: Fabric hand
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_hand
+      anti_pilling:
+        title: Anti-pilling
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/anti_pilling
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/other
+  ContaminantDyesAndPigments:
+    title: Contaminant Type > Dyes and pigments
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments
+    permissible_values:
+      natural_dyes:
+        title: Natural dyes
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments/natural_dyes
+      acid:
+        title: Acid
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments/acid
+      basic:
+        title: Basic
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments/basic
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments/other
+  ContaminantSoftTrimsAndPrints:
+    title: Contaminant Type > Soft trims and prints
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints
+    permissible_values:
+      tape:
+        title: Tape
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/tape
+      binding:
+        title: Binding
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/binding
+      piping:
+        title: Piping
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/piping
+      flag_label:
+        title: (Flag)label
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/flag_label
+      interlining:
+        title: Interlining
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/interlining
+      sewing_thread:
+        title: Sewing thread
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/sewing_thread
+      drawcord:
+        title: Drawcord
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/drawcord
+      hook_and_loop_closure:
+        title: Hook & loop closure
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/hook_and_loop_closure
+      heat_transfer:
+        title: Heat transfer
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/heat_transfer
+      direct_screen_print:
+        title: Direct screen print
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/direct_screen_print
+      pigment_print:
+        title: Pigment print
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/pigment_print
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/other
+  ContaminantHardTrims:
+    title: Contaminant Type > Hard trims
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims
+    permissible_values:
+      button:
+        title: Button
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/button
+      snap_button:
+        title: Snap button
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/snap_button
+      cord_stopper:
+        title: Cord stopper
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/cord_stopper
+      aglet:
+        title: Aglet
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/aglet
+      metal_zip:
+        title: Metal zip
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/metal_zip
+      plastic_zip:
+        title: Plastic zip
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/plastic_zip
+      puller:
+        title: Puller
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/puller
+      hook_and_eye_closure:
+        title: Hook & eye closure
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/hook_and_eye_closure
+      buckle:
+        title: Buckle
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/buckle
+      rivet:
+        title: Rivet
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/rivet
+      studs:
+        title: Studs
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/studs
+      sequins:
+        title: Sequins
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/sequins
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_hard_trims/other
+  ContaminantOtherMaterials:
+    title: Contaminant Type > Other materials
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials
+    permissible_values:
+      acrylic_polymer:
+        title: Acrylic (polymer)
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/acrylic_polymer
+      silicone:
+        title: Silicone
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/silicone
+      polyacrylate:
+        title: Polyacrylate
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyacrylate
+      polyvinyl_chloride:
+        title: Polyvinyl chloride
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyvinyl_chloride
+      polytetrafluoroethylene:
+        title: Polytetrafluoroethylene
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polytetrafluoroethylene
+      polyoxymethylene:
+        title: Polyoxymethylene
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyoxymethylene
+      acrylonitrile_butadiene_styrene:
+        title: Acrylonitrile butadiene styrene
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/acrylonitrile_butadiene_styrene
+      aluminium:
+        title: Aluminium
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/aluminium
+      brass:
+        title: Brass
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/brass
+      zinc:
+        title: Zinc
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/zinc
+      stainless_steel:
+        title: Stainless steel
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/stainless_steel
+      copper:
+        title: Copper
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/copper
+      ferrous_metal:
+        title: Ferrous metal
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/ferrous_metal
+      non_ferrous_metal:
+        title: Non-ferrous metal
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/non_ferrous_metal
+      polylactide:
+        title: Polylactide
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polylactide
+      polyethylene_furanoate:
+        title: Polyethylene furanoate
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyethylene_furanoate
+      aramid:
+        title: Aramid
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/aramid
+      carbon:
+        title: Carbon
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/carbon
+      glass:
+        title: Glass
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/glass
+      pfas:
+        title: PFAS
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/pfas
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/other
+  ContaminantAmountUnit:
+    title: Contaminant Amount Unit
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_amount_unit
+    permissible_values:
+      percent_of_total_batch_weight:
+        title: '% of total batch weight'
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_amount_unit/percent_of_total_batch_weight
+      percent_of_total_fiber_composition:
+        title: '% of total fiber composition'
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_amount_unit/percent_of_total_fiber_composition
+      ppm:
+        title: PPM
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_amount_unit/ppm
+  ContaminantThreshold:
+    title: Contaminant Threshold
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold
+    permissible_values:
+      measured_value:
+        title: Measured value
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/measured_value
+      maximum:
+        title: Maximum
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/maximum
+      trace_amounts_accepted:
+        title: Trace amounts accepted
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/trace_amounts_accepted
+      zero_tolerance:
+        title: Zero tolerance
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_threshold/zero_tolerance
+  ContaminantCheck:
+    title: Contaminant Check
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_check
+    permissible_values:
+      not_evaluated:
+        title: Not evaluated
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_check/not_evaluated
+      detected:
+        title: Detected
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_check/detected
+      not_detected:
+        title: Not detected
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_check/not_detected
+  Format:
+    title: Format
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/format
+    permissible_values:
+      clippings:
+        title: Clippings
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/clippings
+        description: Produced by chopping or cutting textiles into smaller pieces during feedstock preparation
+      cutting_waste:
+        title: Cutting waste
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/cutting_waste
+        description: Produced by manufacturers when cutting markers
+      dust_powder:
+        title: Dust/powder
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/dust_powder
+      fiber:
+        title: Fiber
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/fiber
+      flakes:
+        title: Flakes
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/flakes
+      garments_linens_household_textiles:
+        title: Garments / linens / household textiles
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/garments_linens_household_textiles
+      granules:
+        title: Granules
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/granules
+      monomers:
+        title: Monomers
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/monomers
+      opened_fiber:
+        title: Opened fiber
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/opened_fiber
+        description: Textile that has been shredded or torn into fiber or a mix of fiber and pieces of textiles during feedstock
+          preparation
+      pellets:
+        title: Pellets
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/pellets
+      polymers:
+        title: Polymers
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/polymers
+      pulp:
+        title: Pulp
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/pulp
+      sliver:
+        title: Sliver
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/sliver
+      trim:
+        title: Trim
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/trim
+      yarn:
+        title: Yarn
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/yarn
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/format/other
+  PhysicalPropertyName:
+    title: Physical Property Name
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name
+    permissible_values:
+      brightness:
+        title: Brightness
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/brightness
+      crystallinity:
+        title: Crystallinity
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/crystallinity
+      degree_of_polymerization_dp:
+        title: Degree of Polymerization (DP)
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/degree_of_polymerization_dp
+      density:
+        title: Density
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/density
+      fiber_length:
+        title: Fiber Length
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/fiber_length
+      intrinsic_viscosity_iv:
+        title: Intrinsic Viscosity (IV)
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/intrinsic_viscosity_iv
+      moisture_dry_matter_content:
+        title: Moisture/Dry Matter Content
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/moisture_dry_matter_content
+      molecular_weight_mw_mn:
+        title: Molecular Weight (Mw/Mn)
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/molecular_weight_mw_mn
+      piece_size:
+        title: Piece size
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/piece_size
+      rheology:
+        title: Rheology
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/rheology
+      thermal_properties_tm_tg:
+        title: Thermal Properties (Tm, Tg)
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/thermal_properties_tm_tg
+      other:
+        title: Other
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_name/other
+  PhysicalPropertyUnit:
+    title: Physical Property Unit
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit
+    permissible_values:
+      cm:
+        title: cm
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/cm
+      delta_e:
+        title: ∆E
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/delta_e
+      ml_per_g:
+        title: mL/g
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/ml_per_g
+      dl_per_g:
+        title: dL/g
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/dl_per_g
+      g_per_cm3:
+        title: g/cm^3
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/g_per_cm3
+      percent:
+        title: '%'
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/physical_property_unit/percent
+  FabricConstruction:
+    title: Fabric Construction
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction
+    permissible_values:
+      knit:
+        title: Knit
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/knit
+      woven:
+        title: Woven
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/woven
+      non_woven:
+        title: Non-woven
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/non_woven
+      mixed_construction:
+        title: Mixed construction
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/mixed_construction
+  YesNo:
+    title: Yes / No
+    enum_uri: https://texroad-foundation.github.io/t2t-data-model/lists/yes_no
+    permissible_values:
+      'yes':
+        title: 'Yes'
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/yes_no/yes
+      'no':
+        title: 'No'
+        meaning: https://texroad-foundation.github.io/t2t-data-model/lists/yes_no/no

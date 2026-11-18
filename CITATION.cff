@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this data model, please cite it as below."
+title: "Common Data Model for Textile to Textile Recycling — Specifications"
+version: 0.1.0
+license: CC-BY-4.0
+repository-code: "https://github.com/texroad-foundation/t2t-data-model"
+url: "https://texroad-foundation.github.io/t2t-data-model"
+type: dataset
+authors:
+  - given-names: Traci
+    family-names: Kinden
+    affiliation: TEXroad
+  - given-names: Satu-Marja
+    family-names: Mäkelä
+    affiliation: VTT
+  - given-names: Carla
+    family-names: Fité Galan
+    affiliation: Reverse Resources
+  - given-names: Jan
+    family-names: Merckx
+    affiliation: Cilab and GS1 Nederland
+  - given-names: Catrine
+    family-names: Marchall
+    affiliation: RISE
+keywords:
+  - textile recycling
+  - textile to textile
+  - data model
+  - LinkML
+  - SKOS

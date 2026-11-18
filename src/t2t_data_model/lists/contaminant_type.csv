@@ -1,0 +1,7 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/fibers,fibers,Fibers,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes,coatings_and_finishes,Coatings and finishes,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/dyes_and_pigments,dyes_and_pigments,Dyes and pigments,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/soft_trims_and_prints,soft_trims_and_prints,Soft trims and prints,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/hard_trims,hard_trims,Hard trims,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials,other_materials,Other materials,,,

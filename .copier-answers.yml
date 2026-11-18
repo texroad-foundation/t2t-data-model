@@ -1,0 +1,17 @@
+# Changes here will be overwritten by Copier
+_commit: v0.5.0
+_src_path: https://github.com/linkml/linkml-project-copier
+add_example: false
+copyright_year: '2026'
+email: ''
+existing_license_file: LICENSE
+full_name: TEXroad Foundation
+gh_action_docs_preview: false
+gh_action_pypi: false
+github_org: texroad-foundation
+license: LicenseRef-Custom
+project_description: The Specifications fields (CDM-ID 400–660) of the Common Data
+    Model for Textile to Textile Recycling, and their values lists.
+project_name: t2t-data-model
+project_slug: t2t_data_model
+

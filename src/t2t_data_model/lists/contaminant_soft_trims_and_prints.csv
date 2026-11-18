@@ -1,0 +1,13 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/tape,tape,Tape,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/binding,binding,Binding,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/piping,piping,Piping,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/flag_label,flag_label,(Flag)label,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/interlining,interlining,Interlining,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/sewing_thread,sewing_thread,Sewing thread,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/drawcord,drawcord,Drawcord,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/hook_and_loop_closure,hook_and_loop_closure,Hook & loop closure,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/heat_transfer,heat_transfer,Heat transfer,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/direct_screen_print,direct_screen_print,Direct screen print,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/pigment_print,pigment_print,Pigment print,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_soft_trims_and_prints/other,other,Other,,,

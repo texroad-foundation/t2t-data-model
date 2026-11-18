@@ -1,0 +1,5 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_industrial,post_industrial,Post-industrial,"Textile waste from manufacturing, before products reach the market.",,
+https://texroad-foundation.github.io/t2t-data-model/lists/material_source/pre_consumer,pre_consumer,Pre-consumer,Finished textile products that were never sold to consumers.,,
+https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_residential,post_consumer_residential,"Post-consumer, Residential",Textile waste discarded by individual households after consumer use.,,
+https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_commercial,post_consumer_commercial,"Post-consumer, Commercial","Textile waste discarded after use by businesses such as hotels, hospitals, or offices.",,

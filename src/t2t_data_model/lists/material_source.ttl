@@ -1,0 +1,44 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_commercial> a skos:Concept ;
+    skos:definition "Textile waste discarded after use by businesses such as hotels, hospitals, or offices."@en ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> ;
+    skos:notation "post_consumer_commercial" ;
+    skos:prefLabel "Post-consumer, Commercial"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_residential> a skos:Concept ;
+    skos:definition "Textile waste discarded by individual households after consumer use."@en ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> ;
+    skos:notation "post_consumer_residential" ;
+    skos:prefLabel "Post-consumer, Residential"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_industrial> a skos:Concept ;
+    skos:definition "Textile waste from manufacturing, before products reach the market."@en ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> ;
+    skos:notation "post_industrial" ;
+    skos:prefLabel "Post-industrial"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/material_source/pre_consumer> a skos:Concept ;
+    skos:definition "Finished textile products that were never sold to consumers."@en ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> ;
+    skos:notation "pre_consumer" ;
+    skos:prefLabel "Pre-consumer"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/material_source> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Material Source"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_commercial>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_residential>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_industrial>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/material_source/pre_consumer> .
+

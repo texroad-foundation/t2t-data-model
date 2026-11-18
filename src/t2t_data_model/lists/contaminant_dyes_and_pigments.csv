@@ -1,0 +1,5 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments/natural_dyes,natural_dyes,Natural dyes,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments/acid,acid,Acid,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments/basic,basic,Basic,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_dyes_and_pigments/other,other,Other,,,

@@ -1,0 +1,40 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/knit> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> ;
+    skos:notation "knit" ;
+    skos:prefLabel "Knit"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/mixed_construction> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> ;
+    skos:notation "mixed_construction" ;
+    skos:prefLabel "Mixed construction"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/non_woven> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> ;
+    skos:notation "non_woven" ;
+    skos:prefLabel "Non-woven"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/woven> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> ;
+    skos:notation "woven" ;
+    skos:prefLabel "Woven"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Fabric Construction"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/knit>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/mixed_construction>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/non_woven>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/woven> .
+

@@ -1,0 +1,180 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/acrylic_polymer> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "acrylic_polymer" ;
+    skos:prefLabel "Acrylic (polymer)"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/acrylonitrile_butadiene_styrene> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "acrylonitrile_butadiene_styrene" ;
+    skos:prefLabel "Acrylonitrile butadiene styrene"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/aluminium> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "aluminium" ;
+    skos:prefLabel "Aluminium"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/aramid> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "aramid" ;
+    skos:prefLabel "Aramid"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/brass> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "brass" ;
+    skos:prefLabel "Brass"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/carbon> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "carbon" ;
+    skos:prefLabel "Carbon"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/copper> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "copper" ;
+    skos:prefLabel "Copper"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/ferrous_metal> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "ferrous_metal" ;
+    skos:prefLabel "Ferrous metal"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/glass> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "glass" ;
+    skos:prefLabel "Glass"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/non_ferrous_metal> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "non_ferrous_metal" ;
+    skos:prefLabel "Non-ferrous metal"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/other> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "other" ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/pfas> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "pfas" ;
+    skos:prefLabel "PFAS"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyacrylate> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "polyacrylate" ;
+    skos:prefLabel "Polyacrylate"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyethylene_furanoate> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "polyethylene_furanoate" ;
+    skos:prefLabel "Polyethylene furanoate"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polylactide> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "polylactide" ;
+    skos:prefLabel "Polylactide"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyoxymethylene> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "polyoxymethylene" ;
+    skos:prefLabel "Polyoxymethylene"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polytetrafluoroethylene> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "polytetrafluoroethylene" ;
+    skos:prefLabel "Polytetrafluoroethylene"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyvinyl_chloride> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "polyvinyl_chloride" ;
+    skos:prefLabel "Polyvinyl chloride"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/silicone> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "silicone" ;
+    skos:prefLabel "Silicone"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/stainless_steel> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "stainless_steel" ;
+    skos:prefLabel "Stainless steel"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/zinc> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/other_materials> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> ;
+    skos:notation "zinc" ;
+    skos:prefLabel "Zinc"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Contaminant Type > Other materials"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/acrylic_polymer>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/acrylonitrile_butadiene_styrene>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/aluminium>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/aramid>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/brass>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/carbon>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/copper>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/ferrous_metal>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/glass>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/non_ferrous_metal>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/pfas>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyacrylate>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyethylene_furanoate>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polylactide>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyoxymethylene>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polytetrafluoroethylene>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/polyvinyl_chloride>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/silicone>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/stainless_steel>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_other_materials/zinc> .
+

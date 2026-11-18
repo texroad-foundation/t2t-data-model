@@ -1,0 +1,148 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/anti_pilling> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "anti_pilling" ;
+    skos:prefLabel "Anti-pilling"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/antimicrobial> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "antimicrobial" ;
+    skos:prefLabel "Antimicrobial"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/antistatic> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "antistatic" ;
+    skos:prefLabel "Antistatic"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/dirt_repellent> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "dirt_repellent" ;
+    skos:prefLabel "Dirt repellent"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/elastomeric> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "elastomeric" ;
+    skos:prefLabel "Elastomeric"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_hand> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "fabric_hand" ;
+    skos:prefLabel "Fabric hand"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_softening> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "fabric_softening" ;
+    skos:prefLabel "Fabric softening"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_stiffness> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "fabric_stiffness" ;
+    skos:prefLabel "Fabric stiffness"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fire_resistant> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "fire_resistant" ;
+    skos:prefLabel "Fire resistant"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/flame_retardant> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "flame_retardant" ;
+    skos:prefLabel "Flame retardant"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/insect_repellent> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "insect_repellent" ;
+    skos:prefLabel "Insect repellent"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/non_slip_dimensional_stability> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "non_slip_dimensional_stability" ;
+    skos:prefLabel "Non-slip/dimensional stability"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/other> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "other" ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/silicone> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "silicone" ;
+    skos:prefLabel "Silicone"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/uv_resistant> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "uv_resistant" ;
+    skos:prefLabel "UV resistant"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/water_repellent> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "water_repellent" ;
+    skos:prefLabel "Water repellent"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/wrinkle_resistant> a skos:Concept ;
+    skos:broader <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_type/coatings_and_finishes> ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> ;
+    skos:notation "wrinkle_resistant" ;
+    skos:prefLabel "Wrinkle resistant"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Contaminant Type > Coatings and finishes"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/anti_pilling>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/antimicrobial>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/antistatic>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/dirt_repellent>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/elastomeric>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_hand>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_softening>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fabric_stiffness>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/fire_resistant>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/flame_retardant>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/insect_repellent>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/non_slip_dimensional_stability>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/silicone>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/uv_resistant>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/water_repellent>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/contaminant_coatings_and_finishes/wrinkle_resistant> .
+

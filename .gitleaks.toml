@@ -1,0 +1,7 @@
+# uv.lock holds only public package download addresses and their sha256 hashes; a hash can match a token pattern.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Dependency lock file: public package hashes"
+paths = ['''(^|/)uv\.lock$''']

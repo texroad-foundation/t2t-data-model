@@ -1,0 +1,5 @@
+id,code,label,definition,retired,replaced_by
+https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/knit,knit,Knit,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/woven,woven,Woven,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/non_woven,non_woven,Non-woven,,,
+https://texroad-foundation.github.io/t2t-data-model/lists/fabric_construction/mixed_construction,mixed_construction,Mixed construction,,,

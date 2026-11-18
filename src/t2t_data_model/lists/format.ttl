@@ -1,0 +1,127 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix t2t: <https://texroad-foundation.github.io/t2t-data-model/> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/clippings> a skos:Concept ;
+    skos:definition "Produced by chopping or cutting textiles into smaller pieces during feedstock preparation"@en ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "clippings" ;
+    skos:prefLabel "Clippings"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/cutting_waste> a skos:Concept ;
+    skos:definition "Produced by manufacturers when cutting markers"@en ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "cutting_waste" ;
+    skos:prefLabel "Cutting waste"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/dust_powder> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "dust_powder" ;
+    skos:prefLabel "Dust/powder"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/fiber> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "fiber" ;
+    skos:prefLabel "Fiber"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/flakes> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "flakes" ;
+    skos:prefLabel "Flakes"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/garments_linens_household_textiles> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "garments_linens_household_textiles" ;
+    skos:prefLabel "Garments / linens / household textiles"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/granules> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "granules" ;
+    skos:prefLabel "Granules"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/monomers> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "monomers" ;
+    skos:prefLabel "Monomers"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/opened_fiber> a skos:Concept ;
+    skos:definition "Textile that has been shredded or torn into fiber or a mix of fiber and pieces of textiles during feedstock preparation"@en ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "opened_fiber" ;
+    skos:prefLabel "Opened fiber"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/other> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "other" ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/pellets> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "pellets" ;
+    skos:prefLabel "Pellets"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/polymers> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "polymers" ;
+    skos:prefLabel "Polymers"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/pulp> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "pulp" ;
+    skos:prefLabel "Pulp"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/sliver> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "sliver" ;
+    skos:prefLabel "Sliver"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/trim> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "trim" ;
+    skos:prefLabel "Trim"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format/yarn> a skos:Concept ;
+    skos:inScheme <https://texroad-foundation.github.io/t2t-data-model/lists/format> ;
+    skos:notation "yarn" ;
+    skos:prefLabel "Yarn"@en ;
+    skos:topConceptOf <https://texroad-foundation.github.io/t2t-data-model/lists/format> .
+
+<https://texroad-foundation.github.io/t2t-data-model/lists/format> a skos:ConceptScheme ;
+    dct:isPartOf t2t: ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher <https://texroad.org> ;
+    dct:title "Format"@en ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/format/clippings>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/cutting_waste>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/dust_powder>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/fiber>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/flakes>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/garments_linens_household_textiles>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/granules>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/monomers>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/opened_fiber>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/other>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/pellets>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/polymers>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/pulp>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/sliver>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/trim>,
+        <https://texroad-foundation.github.io/t2t-data-model/lists/format/yarn> .
+

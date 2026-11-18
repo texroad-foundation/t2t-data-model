@@ -24,7 +24,7 @@ from rdflib.namespace import DCTERMS, OWL, RDF, SKOS
 ROOT = Path(__file__).resolve().parent.parent / "src" / "t2t_data_model"
 BASE = "https://texroad-foundation.github.io/t2t-data-model/"
 REPO = "https://github.com/texroad-foundation/t2t-data-model"
-PUBLISHER = "https://texroad.org"  # the TEXroad Foundation
+PUBLISHER = "https://www.texroad.org"  # the TEXroad Foundation
 VERSION = "0.1.0"
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 T2T = Namespace(BASE)

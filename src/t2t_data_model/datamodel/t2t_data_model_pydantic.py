@@ -66,7 +66,7 @@ class LinkMLMeta(RootModel):
         return key in self.root
 
 
-linkml_meta = LinkMLMeta({'created_by': 'https://texroad.org',
+linkml_meta = LinkMLMeta({'created_by': 'https://www.texroad.org',
      'default_prefix': 't2t',
      'default_range': 'string',
      'description': 'The Specifications fields (CDM-ID 400–660) of the Common Data '

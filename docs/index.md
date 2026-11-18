@@ -1,7 +1,7 @@
 # Common Data Model for Textile to Textile Recycling — Specifications
 
 The Specifications fields (CDM-ID 400–660) of the Common Data Model for Textile to Textile Recycling, and their
-values lists. Published by the [TEXroad Foundation](https://texroad.org).
+values lists. Published by the [TEXroad Foundation](https://www.texroad.org).
 
 - [Fields](fields.md): every field, with its type, values list and definition.
 - [Values lists](lists.md): every list, with each value's code, label and definition.

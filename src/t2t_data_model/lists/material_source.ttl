@@ -34,7 +34,7 @@
 <https://texroad-foundation.github.io/t2t-data-model/lists/material_source> a skos:ConceptScheme ;
     dct:isPartOf t2t: ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:publisher <https://texroad.org> ;
+    dct:publisher <https://www.texroad.org> ;
     dct:title "Material Source"@en ;
     owl:versionInfo "0.1.0" ;
     skos:hasTopConcept <https://texroad-foundation.github.io/t2t-data-model/lists/material_source/post_consumer_commercial>,

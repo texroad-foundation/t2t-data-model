@@ -12,7 +12,6 @@ Published by the [TEXroad Foundation](https://texroad.org). Documentation:
 | What | Standard | Where |
 |---|---|---|
 | The fields: name, CDM-ID, data format, definition, which repeat together, one value or several | [LinkML](https://linkml.io/linkml/) | [`src/t2t_data_model/schema/t2t_data_model.yaml`](src/t2t_data_model/schema/t2t_data_model.yaml) |
-| The same fields as a table | CSV | [`src/t2t_data_model/fields/specifications.csv`](src/t2t_data_model/fields/specifications.csv) |
 | Each values list: its values, their codes, labels and definitions | [SKOS](https://www.w3.org/TR/skos-reference/) concept schemes, and CSV | [`src/t2t_data_model/lists/`](src/t2t_data_model/lists/) |
 | A validator for records | JSON Schema, generated from the LinkML schema | on the documentation site, `schema/t2t_data_model.schema.json` |
 

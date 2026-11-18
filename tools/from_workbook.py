@@ -1,7 +1,7 @@
 """Build the release's sources from the CDM workbook (Fields + Values Lists tabs).
 
-Writes the LinkML schema (src/t2t_data_model/schema/), one SKOS concept scheme and one CSV per values list
-(src/t2t_data_model/lists/), and the field table (src/t2t_data_model/fields/specifications.csv). Scope: the
+Writes the LinkML schema (src/t2t_data_model/schema/) and one SKOS concept scheme and one CSV per values list
+(src/t2t_data_model/lists/). Scope: the
 Specifications fields, CDM-ID 400–660. Names, definitions and descriptions are copied as written; a value's label
 and a field's name lose only the whitespace around them.
 
@@ -352,24 +352,10 @@ def write_list(list_id, values):
                         "replaced_by": v.get("replaced_by") or ""})
 
 
-def write_fields(fields):
-    group_of = {c: g for g, (_, ids) in GROUPS.items() for c in ids}
-    with open(ROOT / "fields" / "specifications.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["cdm_id", "data_field_name", "id", "type", "data_format", "values_list", "several_values",
-                    "repeating_group", "definition"])
-        for cdm_id, field in fields.items():
-            slot_id, list_id, several = FIELDS[cdm_id]
-            list_ref = (f"{BASE}lists/{list_id}" if list_id else
-                        "depends on Contaminant Type" if cdm_id == "530.10" else "")
-            w.writerow([cdm_id, field["name"], f"{BASE}{slot_id}", field["type"], field["data_format"], list_ref,
-                        "yes" if several else "no", group_of.get(cdm_id, ""), field["definition"]])
-
-
 def main(workbook):
     wb = openpyxl.load_workbook(workbook, data_only=True)
     fields, lists = read_fields(wb["Common Data Model Fields"]), read_lists(wb["Values Lists"])
-    for folder in ("schema", "lists", "fields"):
+    for folder in ("schema", "lists"):
         (ROOT / folder).mkdir(exist_ok=True)
     built = schema(fields, lists)
     (ROOT / "schema" / "t2t_data_model.yaml").write_text(
@@ -378,7 +364,6 @@ def main(workbook):
         write_list(list_id, values)
     stale = {p.stem for p in (ROOT / "lists").glob("*.csv")} - set(lists)
     assert not stale, f"list files with no list: {stale}"
-    write_fields(fields)
     print(f"{len(fields)} fields, {len(lists)} lists, {sum(len(v['values']) for v in lists.values())} values")
 
 
